@@ -1,0 +1,27 @@
+﻿program X_DSA;
+
+{$mode objfpc}{$H+}
+
+uses
+ {$IFDEF UNIX}
+  cthreads,
+ {$ENDIF}
+  Classes,
+  SysUtils,
+  X_DSA.Main,
+  X_DSA.Utils,
+  X_DSA.LinkedList,
+  X_DSA.C009_SparseArray,
+  X_DSA.C021_22_23;
+
+begin
+  try
+    Run;
+    TLAUtils.DrawLine;
+    Writeln(END_OF_PROGRAM_EN);
+    Readln;
+  except
+    on E: Exception do
+      Writeln(E.ClassName, ': ', E.Message);
+  end;
+end.

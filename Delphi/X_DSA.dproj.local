@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Source"/>
+    <File Path="Source\Code_Implementation"/>
+    <File Path="Source\Code_Implementation\X_DSA.C009_SparseArray.pas"/>
+    <File Path="Source\Code_Implementation\X_DSA.C021_22_23.pas"/>
+    <File Path="Source\X_DSA.Main.pas"/>
+    <File Path="Source\X_DSA.Utils.pas"/>
+    <File Path="Source\目录.txt"/>
+  </ProjectSortOrder>
+	<Transactions>
+    <Transaction>2019/11/18 00:12:35.000.063,=C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\Code_Implementation\X_DSA.C009_SparseArray.pas</Transaction>
+    <Transaction>2019/11/18 00:12:35.000.106,=C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\Code_Implementation\X_DSA.C021_22_23.pas</Transaction>
+    <Transaction>2019/11/18 00:14:15.000.252,C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\Data_Structures\X_DSA.SparseArray.pas=</Transaction>
+  </Transactions>
+</BorlandProject>
