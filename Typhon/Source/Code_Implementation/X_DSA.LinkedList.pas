@@ -1,4 +1,6 @@
-﻿unit X_DSA.C021_22_23;
+﻿unit X_DSA.LinkedList;
+
+{$mode objfpc}{$H+}
 
 interface
 
@@ -19,6 +21,7 @@ type
   TLinkedListDemo = class
   private
     __dummyHead: TNode;
+
   public
     constructor Create(arr: array of integer);
 
@@ -44,17 +47,18 @@ begin
   lld := TLinkedListDemo.Create(a);
   WriteLn(lld.ToString);
 
-  lld.DelLastIndex(3);
+  lld.DelLastIndex(1);
   WriteLn(lld.ToString);
   lld.Free;
   WriteLn;
 
-  // ----------------------------------------------------------
+  //----------------------------------------------------------
 
   a := [1, 2, 3, 4, 5];
   lld := TLinkedListDemo.Create(a);
   lld.ListInversion;
   WriteLn(lld.ToString);
+
 end;
 
 { TLinkedListDemo }
@@ -88,11 +92,11 @@ begin
 
   while node <> nil do
   begin
-    n := n + 1;
+    n += 1;
     node := node.Next;
   end;
 
-  if (lastIndex <= 0) or (lastIndex > n) then
+  if (lastIndex <= 0) and (lastIndex > n) then
   begin
     WriteLn('Index Error');
     Exit;
@@ -114,7 +118,19 @@ begin
     node.Next := del.Next;
     FreeAndNil(del);
   end;
+end;
 
+function __listInversion(node: TNode): TNode;
+var
+  tmp: TNode;
+begin
+  if node = nil then
+    Exit(nil);
+
+  tmp := node.Next;
+  tmp.Next := node;
+
+  Result.Next := __listInversion(tmp);
 end;
 
 procedure TLinkedListDemo.ListInversion;
@@ -146,7 +162,7 @@ begin
 
   while node <> nil do
   begin
-    Result := Result + node.Elment.ToString + ' ';
+    Result += node.Elment.ToString + ' ';
     node := node.Next;
   end;
 end;

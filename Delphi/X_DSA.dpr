@@ -8,8 +8,11 @@ uses
   System.SysUtils,
   X_DSA.Main in 'Source\X_DSA.Main.pas',
   X_DSA.Utils in 'Source\X_DSA.Utils.pas',
-  X_DSA.C009_SparseArray in 'Source\Code_Implementation\X_DSA.C009_SparseArray.pas',
-  X_DSA.C021_22_23 in 'Source\Code_Implementation\X_DSA.C021_22_23.pas';
+  X_DSA.SparseArray in 'Source\Code_Implementation\X_DSA.SparseArray.pas',
+  X_DSA.LinkedList in 'Source\Code_Implementation\X_DSA.LinkedList.pas',
+  X_DSA.DoubleLinkedList in 'Source\Code_Implementation\X_DSA.DoubleLinkedList.pas',
+  X_DSA.CircularLinkedList in 'Source\Code_Implementation\X_DSA.CircularLinkedList.pas',
+  X_DSA.InversePolishCalculator in 'Source\Code_Implementation\X_DSA.InversePolishCalculator.pas';
 
 begin
   try

@@ -153,8 +153,11 @@
         </DelphiCompile>
         <DCCReference Include="Source\X_DSA.Main.pas"/>
         <DCCReference Include="Source\X_DSA.Utils.pas"/>
-        <DCCReference Include="Source\Code_Implementation\X_DSA.C009_SparseArray.pas"/>
-        <DCCReference Include="Source\Code_Implementation\X_DSA.C021_22_23.pas"/>
+        <DCCReference Include="Source\Code_Implementation\X_DSA.SparseArray.pas"/>
+        <DCCReference Include="Source\Code_Implementation\X_DSA.LinkedList.pas"/>
+        <DCCReference Include="Source\Code_Implementation\X_DSA.DoubleLinkedList.pas"/>
+        <DCCReference Include="Source\Code_Implementation\X_DSA.CircularLinkedList.pas"/>
+        <DCCReference Include="Source\Code_Implementation\X_DSA.InversePolishCalculator.pas"/>
         <None Include="Source\目录.txt"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>

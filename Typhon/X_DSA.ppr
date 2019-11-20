@@ -10,9 +10,11 @@ uses
   SysUtils,
   X_DSA.Main,
   X_DSA.Utils,
+  X_DSA.CircularLinkedList,
+  X_DSA.DoubleLinkedList,
   X_DSA.LinkedList,
-  X_DSA.C009_SparseArray,
-  X_DSA.C021_22_23;
+  X_DSA.SparseArray,
+  X_DSA.InversePolishCalculator;
 
 begin
   try

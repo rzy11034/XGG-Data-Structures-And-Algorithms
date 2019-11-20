@@ -1,4 +1,4 @@
-﻿unit X_DSA.C009_SparseArray;
+﻿unit X_DSA.SparseArray;
 
 interface
 

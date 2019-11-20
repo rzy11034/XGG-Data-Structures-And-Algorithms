@@ -22,7 +22,7 @@
           <PathDelim Value="\"/>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value="Source;Source\Code_Implementation;Source\Data_Structures"/>
+            <OtherUnitFiles Value="Source;Source\Code_Implementation"/>
             <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <Parsing>
@@ -46,6 +46,11 @@
               <TrashVariables Value="True"/>
             </Debugging>
           </Linking>
+          <Other>
+            <CompilerMessages>
+              <IgnoredMessages idx6058="True" idx4105="True" idx4104="True"/>
+            </CompilerMessages>
+          </Other>
         </CompilerOptions>
       </Item>
       <Item Name="Release">
@@ -54,7 +59,7 @@
           <PathDelim Value="\"/>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value="Source;Source\Code_Implementation;Source\Data_Structures"/>
+            <OtherUnitFiles Value="Source;Source\Code_Implementation"/>
             <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <CodeGeneration>
@@ -100,15 +105,23 @@
         <IsPartOfProject Value="True"/>
       </Unit>
       <Unit>
-        <Filename Value="Source\Code_Implementation\X_DSA.C009_SparseArray.pas"/>
+        <Filename Value="Source\Code_Implementation\X_DSA.SparseArray.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
       <Unit>
-        <Filename Value="Source\Data_Structures\X_DSA.LinkedList.pas"/>
+        <Filename Value="Source\Code_Implementation\X_DSA.LinkedList.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
       <Unit>
-        <Filename Value="Source\Code_Implementation\X_DSA.C021_22_23.pas"/>
+        <Filename Value="Source\Code_Implementation\X_DSA.DoubleLinkedList.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Code_Implementation\X_DSA.CircularLinkedList.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Code_Implementation\X_DSA.InversePolishCalculator.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
     </Units>
@@ -118,7 +131,7 @@
     <PathDelim Value="\"/>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="Source;Source\Code_Implementation;Source\Data_Structures"/>
+      <OtherUnitFiles Value="Source;Source\Code_Implementation"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
   </CompilerOptions>
