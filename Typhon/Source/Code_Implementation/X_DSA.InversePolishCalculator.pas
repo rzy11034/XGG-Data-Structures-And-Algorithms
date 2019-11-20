@@ -22,7 +22,7 @@ type
   const
     NUMBER_SET = ['0' .. '9', '.'];
     OPERATOR_SET = ['+', '-', '*', '/'];
-    BRACKET_SET = ['(', ')', '[', ']'];
+    BRACKET_SET = ['(', ')'];
     LETTER_SET = ['a' .. 'z'];
 
   private
@@ -42,6 +42,8 @@ type
     function __optPriority(opt: WString): integer;
     /// <summary> 转换中缀表达式元素列表为后缀表达式元素列表 </summary>
     procedure __infixToSuffix;
+    /// <summary> 计算方法 </summary>
+    function __calc(a, b: double; opt: string): double;
 
     constructor Create;
     destructor Destroy; override;
@@ -60,7 +62,7 @@ var
   ipc: TInversePolishCalculator;
   s: string;
 begin
-  s := '1*(2+3)';
+  s := 'sin(1+1)*cos(2*3)';
 
   ipc := TInversePolishCalculator.Create;
   //WriteLn(ipc.__isValidExpression());
@@ -104,88 +106,75 @@ begin
   inherited Destroy;
 end;
 
+function TInversePolishCalculator.__calc(a, b: double): double;
+begin
+
+end;
+
 procedure TInversePolishCalculator.__infixToSuffix;
 var
   stack: TStackOfString;
   opt: WString;
   i: integer;
+  d: double;
 begin
   stack := TStackOfString.Create;
   try
+    stack.Push('#');
+
     for i := 0 to __infixExpressionList.Size - 1 do
     begin
-      // 如果是数字字符串
-      if CharInSet(__infixExpressionList.Items[i][1], NUMBER_SET) then
+      // 判断是否为数字字符串，如果是直接加入后缀表达式列表，否则执行入栈操作
+      if TryStrToFloat(__infixExpressionList[i], d) then
       begin
         __suffixExpressionList.PushBack(__infixExpressionList[i]);
       end
-      else // 操作符字符串
+      else
       begin
         opt := __infixExpressionList[i];
 
-        if stack.IsEmpty then
+        // 如果opt为'('，则直接压栈
+        // 如果opt为 ')', 则出栈至'(', 加入列表,
+        // 否则处理优先级情况
+        if opt = '(' then
           stack.Push(opt)
+        else if opt = ')' then
+        begin
+          while stack.Top <> '(' do
+          begin
+            __suffixExpressionList.PushBack(stack.Top);
+            stack.Pop;
+          end;
+
+          stack.Pop;
+        end
         else
         begin
-          if __optPriority(stack.Top) < __optPriority(opt) then
+          if stack.Top = '(' then
+            stack.Push(opt)
+          else
           begin
-            stack.Push(opt);
-          end
-          else if __optPriority(stack.Top) > __optPriority(opt) then
-          begin
-            if (opt = ')') then // 如果opt优先级低，并且 opt = ')' 出栈
+            // 判断和opt栈顶操作符优先级
+            // 如果大于等于，压栈当前opt
+            // 否则弹栈至栈顶小于等于opt，opt压栈
+            if __optPriority(opt) >= __optPriority(stack.Top) then
+              stack.Push(opt)
+            else
             begin
-              while not stack.IsEmpty do
+              while __optPriority(stack.Top) >= __optPriority(opt) do
               begin
                 __suffixExpressionList.PushBack(stack.Top);
                 stack.Pop;
-
-                if (stack.Top = '(') then
-                  Break;
               end;
 
-
-              stack.Pop;
-            end
-            else if (opt = ']') then
-            begin
-              repeat
-                __suffixExpressionList.PushBack(stack.Top);
-                stack.Pop;
-              until stack.Top = '[';
-
-              stack.Pop;
-            end
-            else
-            begin
-              __suffixExpressionList.PushBack(stack.Top);
-              stack.Pop;
-            end;
-          end
-          else // 优先级相等
-          begin
-            if opt = ')' then
-            begin
-              if (stack.Top = '(') then
-                stack.Pop
-              else
-                stack.Push(opt);
-            end
-            else if opt = ']' then
-            begin
-              if (stack.Top = '[') then
-                stack.Pop
-              else
-                stack.Push(opt);
-            end
-            else
               stack.Push(opt);
+            end;
           end;
         end;
       end;
     end;
 
-    while not stack.IsEmpty do
+    while stack.Top <> '#' do
     begin
       __suffixExpressionList.PushBack(stack.Top);
       stack.Pop;
@@ -204,7 +193,7 @@ begin
   try
     for c in str do
     begin
-      if (c = '(') or (c = '[') then
+      if (c = '(') then
         stack.Push(c);
 
       if c = ')' then
@@ -228,21 +217,17 @@ function TInversePolishCalculator.__optPriority(opt: WString): integer;
 var
   ret: integer;
 begin
-  if (opt = ')') or (opt = ']') then
-    ret := -1
-  else if (opt = '+') or (opt = '-') then
+  if opt = '#' then
     ret := 0
-  else if (opt = '*') or (opt = '/') then
+  else if (opt = '+') or (opt = '-') then
     ret := 1
-  else if (opt = '[') or (opt = ']') then
+  else if (opt = '*') or (opt = '/') then
+    ret := 2
+  else if (opt = 'sin') or (opt = 'cos') or (opt = 'tan') or (opt = 'sqr')
+    or (opt = 'sqrt') then
     ret := 3
-  else if (opt = '(') or (opt = ')') then
-    ret := 4
-  else if (opt = 'sin(') or (opt = 'cos(') or (opt = 'tan(') or (opt = 'sqr(')
-    or (opt = 'sqrt(') then
-    ret := 5
   else
-    ret := -2;
+    ret := -1;
 
   Result := ret;
 end;
@@ -261,7 +246,7 @@ begin
   end;
 
   // 转换字符串为字符数组，主要因为FreePascal的Debug元法调试0基字符串
-  tmp := str;
+  tmp := WString(str);
   SetLength(charArr, Length(tmp));
   i := 0;
   for c in tmp do
@@ -276,15 +261,16 @@ begin
   begin
     c := charArr[i];
 
-    if CharInSet(c, NUMBER_SET) then // 数字字符
+    // 判断当前字符是为数字，如果是处理数字字符情况，否则处理非数字字符情况
+    if CharInSet(c, NUMBER_SET) then
     begin
       tmp := tmp + c;
 
-      // i+1 是否越界
+      // 判断 i+1 后数组是否越界
       if i + 1 < Length(charArr) then
       begin
 
-        // 下一字符是否数字
+        // 预下一字符，判断是否为数字， 如果是 i+1，继续循环， 否则tmp加入列表
         if CharInSet(charArr[i + 1], NUMBER_SET) then
         begin
           i := i + 1;
@@ -292,42 +278,60 @@ begin
         end
         else
           __infixExpressionList.PushBack(Trim(tmp));
+
       end
       else
         __infixExpressionList.PushBack(Trim(tmp));
+
     end
-    else // 非数字字符
+    else
     begin
       tmp := tmp + c;
 
-      // i+1 是否越界
-      if (i + 1 < Length(charArr)) then
+      // 如果当前字符为 '(' 时, 直接加入列表, 继续循环
+      // 如果当前字符为操作符时，直接加入列表, 继续循环
+      // 否则处理为字母时情况
+      if (c = '(') or (c = ')') then
       begin
+        __infixExpressionList.PushBack(c);
 
-        // 当前字符为字母的情况
-        if (CharInSet(c, LETTER_SET)) then
-        begin
-          // 下一个字符是字母或者括号时
-          if CharInSet(charArr[i + 1], BRACKET_SET) or CharInSet(charArr[i + 1], LETTER_SET) then
-          begin
-            i := i + 1;
-            Continue;
-          end
-          else
-            __infixExpressionList.PushBack(Trim(tmp));
-        end
-        else
-        begin
-          // 当前字符是否括号或者操作符
-          if CharInSet(c, OPERATOR_SET) or CharInSet(c, BRACKET_SET) then
-            __infixExpressionList.PushBack(Trim(tmp));
-        end;
+        i += 1;
+        tmp := '';
+        Continue;
+      end
+      else if CharInSet(c, OPERATOR_SET) then
+      begin
+        __infixExpressionList.PushBack(c);
+
+        i += 1;
+        tmp := '';
+        Continue;
       end
       else
-        __infixExpressionList.PushBack(Trim(tmp));
+      begin
+        // 如果 i+1 后数组不越界
+        if (i + 1 < Length(charArr)) then
+        begin
+
+          // 如果当前字符为字母时， 预读下一个字符
+          if (CharInSet(c, LETTER_SET)) then
+          begin
+            // 如果下一个字符是字母时，继续循环， 否则 tmp 加入列表
+            if CharInSet(charArr[i + 1], LETTER_SET) then
+            begin
+              i += 1;
+              Continue;
+            end
+            else
+              __infixExpressionList.PushBack(Trim(tmp));
+          end;
+        end
+        else
+          __infixExpressionList.PushBack(Trim(tmp));
+      end;
     end;
 
-    i := i + 1;
+    i += 1;
     tmp := '';
   end;
 end;

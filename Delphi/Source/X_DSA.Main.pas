@@ -8,6 +8,7 @@ implementation
 
 uses
   X_DSA.InversePolishCalculator;
+
 procedure Run;
 begin
   Main;
