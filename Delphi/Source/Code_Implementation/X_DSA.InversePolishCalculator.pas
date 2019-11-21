@@ -4,42 +4,52 @@ interface
 
 uses
   System.SysUtils,
+  System.Classes,
+  System.Math,
   System.Generics.Collections;
 
 type
-  TStackOfString = TStack<string>;
-  TStackOfChar = TStack<char>;
-  TListOfString = TList<string>;
+
+  WString = String;
+  WChar = Char;
+
+  TStackOfString = TStack<String>;
+  TStackOfDouble = TStack<double>;
+  TStackOfChar = TStack<Char>;
+  TListOfString = TList<String>;
 
   TInversePolishCalculator = class
   const
     NUMBER_SET = ['0' .. '9', '.'];
     OPERATOR_SET = ['+', '-', '*', '/'];
-    BRACKET_SET = ['(', ')', '[', ']'];
+    BRACKET_SET = ['(', ')'];
     LETTER_SET = ['a' .. 'z'];
 
   private
-    __optStack: TStackOfString;
-    __numStack: TStackOfString;
-
-  public
     __infixExpressionList: TListOfString; // 中缀表达式元素列表
     __suffixExpressionList: TListOfString; // 后缀表达式元素列表
 
     /// <summary> 是否有效表达式 </summary>
-    function __isValidExpression(str: string): boolean;
+    function __isValidExpression(str: String): boolean;
     /// <summary> 转换字符串为表达式列表 </summary>
-    procedure __trimExpression(str: string);
+    procedure __trimExpression(str: String);
     /// <summary> 返回操作符优先级 </summary>
-    function __optPriority(opt: string): integer;
+    function __optPriority(opt: WString): integer;
+    /// <summary> 计算方法 </summary>
+    function __calc: double;
     /// <summary> 转换中缀表达式元素列表为后缀表达式元素列表 </summary>
     procedure __infixToSuffix;
 
+  public
     constructor Create;
     destructor Destroy; override;
 
-    function Calculator(str: string): double;
-
+    /// <summary> 计算 </summary>
+    function Calculator(str: String): double;
+    /// <summary> 输出中缀表达式 </summary>
+    function InfixToString: String;
+    /// <summary> 输出后缀表达式 </summary>
+    function SuffixToString: String;
   end;
 
 procedure Main;
@@ -49,62 +59,207 @@ implementation
 procedure Main;
 var
   ipc: TInversePolishCalculator;
-  s: string;
+  s: String;
+  i: integer;
 begin
-  s := '1*(2+3)';
+  s := 'cos(1+2)*sin(2+3)';
 
   ipc := TInversePolishCalculator.Create;
-  //WriteLn(ipc.__isValidExpression());
-  ipc.__trimExpression(s);
 
-  for s in ipc.__infixExpressionList do
-    Write(s, ' ');
+  WriteLn(ipc.Calculator(s).ToString);
+
+  for i := 0 to ipc.__infixExpressionList.Count - 1 do
+    Write(ipc.__infixExpressionList[i], ' ');
   WriteLn;
 
-  ipc.__infixToSuffix;
-
-  for s in ipc.__suffixExpressionList do
-    Write(s, ' ');
+  for i := 0 to ipc.__suffixExpressionList.Count - 1 do
+    Write(ipc.__suffixExpressionList[i], ' ');
   WriteLn;
-
 
   ipc.Free;
 end;
 
 { TInversePolishCalculator }
 
-function TInversePolishCalculator.Calculator(str: string): double;
-begin
-  Result := 0.0;
-end;
-
 constructor TInversePolishCalculator.Create;
 begin
-  __numStack := TStackOfString.Create;
-  __optStack := TStackOfString.Create;
   __infixExpressionList := TListOfString.Create;
   __suffixExpressionList := TListOfString.Create;
 end;
 
+function TInversePolishCalculator.Calculator(str: String): double;
+begin
+  if not __isValidExpression(Trim(str)) then
+    raise Exception.Create('It isn''t Valid Expression.')
+  else
+    __trimExpression(Trim(str));
+
+  __infixToSuffix;
+
+  Result := __calc;
+end;
+
 destructor TInversePolishCalculator.Destroy;
 begin
-  __numStack.Free;
-  __optStack.Free;
   __infixExpressionList.Free;
   __suffixExpressionList.Free;
+  inherited Destroy;
+end;
 
-  inherited;
+function TInversePolishCalculator.InfixToString: String;
+var
+  sb: TStringBuilder;
+  i: integer;
+begin
+  sb := TStringBuilder.Create;
+  try
+    for i := 0 to __infixExpressionList.Count - 1 do
+      sb.Append(__infixExpressionList[i]).Append(' ');
+
+    Result := sb.ToString;
+  finally
+    sb.Free;
+  end;
+end;
+
+function TInversePolishCalculator.SuffixToString: String;
+var
+  sb: TStringBuilder;
+  i: integer;
+begin
+  sb := TStringBuilder.Create;
+  try
+    for i := 0 to __suffixExpressionList.Count - 1 do
+      sb.Append(__suffixExpressionList[i]).Append(' ');
+
+    Result := sb.ToString;
+  finally
+    sb.Free;
+  end;
+end;
+
+function TInversePolishCalculator.__calc: double;
+var
+  OptArr: array of WString;
+  optList: TStringList;
+  opt: WString;
+  stack: TStackOfDouble;
+  a, b, ret, tmp: double;
+  i: integer;
+begin
+  // 利用 TStringList。先把备选的字符串挨个Add 进去，
+  // 然后调用其 IndexOf 方法。该方法返回一个整数，
+  // 表示待找字符串出现在列表中的位置
+  OptArr := ['+', '-', '*', '/', 'sin', 'cos', 'tan', 'sqr', 'sqrt'];
+  optList := TStringList.Create;
+  stack := TStackOfDouble.Create;
+  try
+    for i := 0 to Length(OptArr) - 1 do
+      optList.Add(OptArr[i]);
+
+    for i := 0 to __suffixExpressionList.Count - 1 do
+    begin
+      if TryStrToFloat(__suffixExpressionList[i], tmp) then
+        stack.Push(tmp)
+      else
+      begin
+        opt := __suffixExpressionList[i];
+
+        // 如果 optList.IndexOf(__optStack.Top) <= 3，操作符为二元操作符
+        // 否则为一元操作符
+        if optList.IndexOf(opt) <= 3 then
+        begin
+          b := stack.Pop;
+          a := stack.Pop;
+
+          case optList.IndexOf(opt) of
+            0:
+              begin
+                ret := a + b;
+                stack.Push(ret);
+              end;
+
+            1:
+              begin
+                ret := a - b;
+                stack.Push(ret);
+              end;
+
+            2:
+              begin
+                ret := a * b;
+                stack.Push(ret);
+              end;
+
+            3:
+              begin
+                try
+                  ret := a / b;
+                  stack.Push(ret);
+                except
+                  on E: EZeroDivide do
+                    WriteLn(E.ClassName, ': ', E.Message);
+                end;
+              end;
+          end;
+        end
+        else
+        begin
+          a := stack.Pop;
+
+          case optList.IndexOf(opt) of
+            4:
+              begin
+                ret := sin(a);
+                stack.Push(ret);
+              end;
+
+            5:
+              begin
+                ret := Cos(a);
+                stack.Push(ret);
+              end;
+
+            6:
+              begin
+                ret := Tan(a);
+                stack.Push(ret);
+              end;
+
+            7:
+              begin
+                ret := sqr(a);
+                stack.Push(ret);
+              end;
+
+            8:
+              begin
+                ret := sqrt(a);
+                stack.Push(ret);
+              end;
+          end;
+        end;
+      end;
+    end;
+
+    Result := stack.Pop;
+  finally
+    stack.Free;
+    optList.Free;
+  end;
 end;
 
 procedure TInversePolishCalculator.__infixToSuffix;
 var
   stack: TStackOfString;
-  opt: string;
-  i: integer;
+  opt: WString;
+  i, n: integer;
   d: double;
 begin
   stack := TStackOfString.Create;
   try
+    stack.Push('#');
+
     for i := 0 to __infixExpressionList.Count - 1 do
     begin
       // 判断是否为数字字符串，如果是直接加入后缀表达式列表，否则执行入栈操作
@@ -116,94 +271,76 @@ begin
       begin
         opt := __infixExpressionList[i];
 
-        // 如果栈空直接入栈, 否则判断操作符优先级，
-        if stack.Count = 0 then
+        // 如果opt为'('，则直接压栈
+        // 如果opt为 ')', 则出栈至'(', 加入列表,
+        // 否则处理优先级情况
+        if opt = '(' then
           stack.Push(opt)
+        else if opt = ')' then
+        begin
+          while stack.Peek <> '(' do
+          begin
+            __suffixExpressionList.Add(stack.Peek);
+            stack.Pop;
+          end;
+
+          stack.Pop;
+        end
         else
         begin
-          if __optPriority(stack.Peek) < __optPriority(opt) then
+          if stack.Peek = '(' then
+            stack.Push(opt)
+          else
           begin
-            stack.Push(opt);
-          end
-          else if __optPriority(stack.Peek) > __optPriority(opt) then
-          begin
-            if (opt = ')') then // 如果opt优先级低，并且 opt = ')' 出栈
+            // 判断和opt栈顶操作符优先级
+            // 如果大于等于，压栈当前opt
+            // 否则弹栈至栈顶小于等于opt，opt压栈
+            if __optPriority(opt) >= __optPriority(stack.Peek) then
+              stack.Push(opt)
+            else
             begin
-              while stack.Count <> 0 do
+              while __optPriority(stack.Peek) >= __optPriority(opt) do
               begin
                 __suffixExpressionList.Add(stack.Peek);
                 stack.Pop;
-
-                if (stack.Peek = '(') then
-                  Break;
               end;
 
-              stack.Pop;
-            end
-            else if (opt = ']') then
-            begin
-              repeat
-                __suffixExpressionList.Add(stack.Peek);
-                stack.Pop;
-              until stack.Peek = '[';
-
-              stack.Pop;
-            end
-            else
-            begin
-              __suffixExpressionList.Add(stack.Peek);
-              stack.Pop;
-            end;
-          end
-          else // 优先级相等
-          begin
-            if opt = ')' then
-            begin
-              if (stack.Peek = '(') then
-                stack.Pop
-              else
-                stack.Push(opt);
-            end
-            else if opt = ']' then
-            begin
-              if (stack.Peek = '[') then
-                stack.Pop
-              else
-                stack.Push(opt);
-            end
-            else
               stack.Push(opt);
+            end;
           end;
         end;
       end;
     end;
 
-    while stack.Count <> 0 do
+    while stack.Peek <> '#' do
     begin
       __suffixExpressionList.Add(stack.Peek);
       stack.Pop;
     end;
+
   finally
     stack.Free;
   end;
 end;
 
-function TInversePolishCalculator.__isValidExpression(str: string): boolean;
+function TInversePolishCalculator.__isValidExpression(str: String): boolean;
 var
   stack: TStackOfChar;
-  c: char;
+  c: Char;
 begin
   stack := TStackOfChar.Create;
   try
     for c in str do
     begin
-      if (c = '(') or (c = '[') then
+      if (c = '(') then
         stack.Push(c);
 
       if c = ')' then
       begin
         if (stack.Count <> 0) and (stack.Peek = '(') then
-          stack.Pop
+        begin
+          stack.Pop;
+        end
         else
           Exit(False);
       end;
@@ -215,18 +352,18 @@ begin
   end;
 end;
 
-function TInversePolishCalculator.__optPriority(opt: string): integer;
+function TInversePolishCalculator.__optPriority(opt: WString): integer;
 var
   ret: integer;
 begin
-  if (opt = '+') or (opt = '-') then
+  if opt = '#' then
     ret := 0
-  else if (opt = '*') or (opt = '/') then
+  else if (opt = '+') or (opt = '-') then
     ret := 1
-  else if (opt = 'sin(') or (opt = 'cos(') or (opt = 'tan(') or (opt = 'sqr(')
-    or (opt = 'sqrt(') then
+  else if (opt = '*') or (opt = '/') then
     ret := 2
-  else if (opt = '(') or (opt = ')') then
+  else if (opt = 'sin') or (opt = 'cos') or (opt = 'tan') or (opt = 'sqr') or
+    (opt = 'sqrt') then
     ret := 3
   else
     ret := -1;
@@ -234,21 +371,28 @@ begin
   Result := ret;
 end;
 
-procedure TInversePolishCalculator.__trimExpression(str: string);
+procedure TInversePolishCalculator.__trimExpression(str: String);
 var
-  c: char;
-  charArr: TArray<char>;
-  tmp: string;
+  c: WChar;
+  charArr: array of WChar;
+  tmp: WString;
   i: integer;
 begin
   if not __isValidExpression(str) then
   begin
-    writeLn('Expression is Illegal.');
+    WriteLn('Expression is Illegal.');
     Exit;
   end;
 
   // 转换字符串为字符数组，主要因为FreePascal的Debug元法调试0基字符串
-  charArr := str.ToCharArray;
+  tmp := WString(str);
+  SetLength(charArr, Length(tmp));
+  i := 0;
+  for c in tmp do
+  begin
+    charArr[i] := c;
+    i := i + 1;
+  end;
 
   tmp := '';
   i := 0;
@@ -286,7 +430,7 @@ begin
       // 如果当前字符为 '(' 时, 直接加入列表, 继续循环
       // 如果当前字符为操作符时，直接加入列表, 继续循环
       // 否则处理为字母时情况
-      if c = '(' then
+      if (c = '(') or (c = ')') then
       begin
         __infixExpressionList.Add(c);
 

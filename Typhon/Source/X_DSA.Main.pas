@@ -12,8 +12,7 @@ procedure Run;
 
 implementation
 
-uses
-  X_DSA.InversePolishCalculator;
+uses X_DSA.Queen8;
 
 procedure Run;
 begin

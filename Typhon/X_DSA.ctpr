@@ -124,6 +124,14 @@
         <Filename Value="Source\Code_Implementation\X_DSA.InversePolishCalculator.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="Source\Code_Implementation\X_DSA.MiGong.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Code_Implementation\X_DSA.Queen8.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
