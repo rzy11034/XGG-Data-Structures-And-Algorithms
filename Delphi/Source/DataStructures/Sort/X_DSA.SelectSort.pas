@@ -2,31 +2,18 @@
 
 interface
 
-uses
-  System.Generics.Defaults;
-
-type
-  TSelectSort<T> = class
-  private type
-    TArrayOfT = TArray<T>;
-  public
-    class procedure Sort(var arr: TArrayOfT);
-  end;
-
 procedure Main;
+procedure SelectSort(var arr: array of integer);
 
 implementation
 
-type
-  TSelectSorts = TSelectSort<integer>;
-
 procedure Main;
 var
-  a: TArray<integer>;
+  a: array of integer;
   i: integer;
 begin
   a := [8, 3, 2, 1];
-  TSelectSorts.Sort(a);
+  SelectSort(a);
 
   for i := 0 to Length(a) - 1 do
     Write(a[i], ' ');
@@ -34,23 +21,17 @@ begin
   WriteLn;
 end;
 
-{ TSelectSort }
-
-class procedure TSelectSort<T>.Sort(var arr: TArrayOfT);
+procedure SelectSort(var arr: array of integer);
 var
-  i, j, minIndex: integer;
-  min: T;
-  cmp: IComparer<T>;
+  i, j, minIndex, min: integer;
 begin
-  cmp := TComparer<T>.Default;
-
   for i := 0 to Length(arr) - 1 do
   begin
     minIndex := i;
 
     for j := i + 1 to Length(arr) - 1 do
     begin
-      if cmp.Compare(arr[minIndex], arr[j]) > 0 then
+      if arr[minIndex] > arr[j] then
         minIndex := j;
     end;
 

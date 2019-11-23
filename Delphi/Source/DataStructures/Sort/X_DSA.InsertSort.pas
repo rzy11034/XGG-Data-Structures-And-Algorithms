@@ -1,12 +1,9 @@
 ﻿unit X_DSA.InsertSort;
 
-{$mode objfpc}{$H+}
-
 interface
 
 uses
-  Classes,
-  SysUtils;
+  System.Generics.Defaults;
 
 procedure Main;
 procedure InsertSort(var arr: array of integer);
@@ -22,7 +19,7 @@ begin
   InsertSort(a);
 
   for i := 0 to Length(a) - 1 do
-    Write(a[i], ' ');
+    write(a[i], ' ');
 
   WriteLn;
 end;
@@ -34,12 +31,12 @@ begin
   for i := 1 to Length(arr) - 1 do
   begin
     insertVal := arr[i];
-    insertIndex := i - 1;
+    insertindex := i - 1;
 
-    while (insertindex >= 0) and (insertval < arr[insertindex]) do
+    while (insertindex >= 0) and (insertVal < arr[insertindex]) do
     begin
       arr[insertindex + 1] := arr[insertindex];
-      insertindex -= 1;
+      insertindex := insertindex - 1;
     end;
 
     arr[insertindex + 1] := insertVal;

@@ -162,6 +162,7 @@
         <DCCReference Include="Source\DataStructures\Stack\X_DSA.InversePolishCalculator.pas"/>
         <DCCReference Include="Source\DataStructures\Sort\X_DSA.BubbleSort.pas"/>
         <DCCReference Include="Source\DataStructures\Sort\X_DSA.SelectSort.pas"/>
+        <DCCReference Include="Source\DataStructures\Sort\X_DSA.InsertSort.pas"/>
         <None Include="Source\目录.txt"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>

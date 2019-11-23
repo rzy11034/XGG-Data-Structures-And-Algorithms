@@ -16,7 +16,8 @@ uses
   X_DSA.SparseArray in 'Source\DataStructures\SparseArray\X_DSA.SparseArray.pas',
   X_DSA.InversePolishCalculator in 'Source\DataStructures\Stack\X_DSA.InversePolishCalculator.pas',
   X_DSA.BubbleSort in 'Source\DataStructures\Sort\X_DSA.BubbleSort.pas',
-  X_DSA.SelectSort in 'Source\DataStructures\Sort\X_DSA.SelectSort.pas';
+  X_DSA.SelectSort in 'Source\DataStructures\Sort\X_DSA.SelectSort.pas',
+  X_DSA.InsertSort in 'Source\DataStructures\Sort\X_DSA.InsertSort.pas';
 
 begin
   try
