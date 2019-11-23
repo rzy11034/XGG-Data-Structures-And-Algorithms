@@ -12,7 +12,7 @@ procedure Run;
 
 implementation
 
-uses X_DSA.Queen8;
+uses X_DSA.InsertSort;
 
 procedure Run;
 begin

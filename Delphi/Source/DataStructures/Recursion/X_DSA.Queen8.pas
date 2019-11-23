@@ -1,12 +1,6 @@
 ﻿unit X_DSA.Queen8;
 
-{$mode objfpc}{$H+}
-
 interface
-
-uses
-  Classes,
-  SysUtils;
 
 procedure Main;
 function Judge(n: integer): boolean;
@@ -47,7 +41,7 @@ var
 begin
   if n = MAX then
   begin
-    Count += 1;
+    Count := Count + 1;
     Print;
     Exit;
   end;

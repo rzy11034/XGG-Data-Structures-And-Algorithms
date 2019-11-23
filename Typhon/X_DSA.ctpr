@@ -22,7 +22,7 @@
           <PathDelim Value="\"/>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value="Source;Source\Code_Implementation"/>
+            <OtherUnitFiles Value="Source;Source\DataStructures\Stack;Source\DataStructures\SparseArray;Source\DataStructures\LinkedList;Source\DataStructures\Recursion;Source\DataStructures\Sort"/>
             <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <Parsing>
@@ -59,7 +59,7 @@
           <PathDelim Value="\"/>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value="Source;Source\Code_Implementation"/>
+            <OtherUnitFiles Value="Source;Source\DataStructures\Stack;Source\DataStructures\SparseArray;Source\DataStructures\LinkedList;Source\DataStructures\Recursion;Source\DataStructures\Sort"/>
             <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <CodeGeneration>
@@ -105,31 +105,43 @@
         <IsPartOfProject Value="True"/>
       </Unit>
       <Unit>
-        <Filename Value="Source\Code_Implementation\X_DSA.SparseArray.pas"/>
+        <Filename Value="Source\DataStructures\SparseArray\X_DSA.SparseArray.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
       <Unit>
-        <Filename Value="Source\Code_Implementation\X_DSA.LinkedList.pas"/>
+        <Filename Value="Source\DataStructures\LinkedList\X_DSA.CircularLinkedList.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
       <Unit>
-        <Filename Value="Source\Code_Implementation\X_DSA.DoubleLinkedList.pas"/>
+        <Filename Value="Source\DataStructures\LinkedList\X_DSA.LinkedList.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
       <Unit>
-        <Filename Value="Source\Code_Implementation\X_DSA.CircularLinkedList.pas"/>
+        <Filename Value="Source\DataStructures\LinkedList\X_DSA.DoubleLinkedList.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
       <Unit>
-        <Filename Value="Source\Code_Implementation\X_DSA.InversePolishCalculator.pas"/>
+        <Filename Value="Source\DataStructures\Stack\X_DSA.InversePolishCalculator.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
       <Unit>
-        <Filename Value="Source\Code_Implementation\X_DSA.MiGong.pas"/>
+        <Filename Value="Source\DataStructures\Recursion\X_DSA.MiGong.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
       <Unit>
-        <Filename Value="Source\Code_Implementation\X_DSA.Queen8.pas"/>
+        <Filename Value="Source\DataStructures\Recursion\X_DSA.Queen8.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\DataStructures\Sort\X_DSA.BubbleSort.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\DataStructures\Sort\X_DSA.SelectSort.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\DataStructures\Sort\X_DSA.InsertSort.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
     </Units>
@@ -139,7 +151,7 @@
     <PathDelim Value="\"/>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="Source;Source\Code_Implementation"/>
+      <OtherUnitFiles Value="Source;Source\DataStructures\Stack;Source\DataStructures\SparseArray;Source\DataStructures\LinkedList;Source\DataStructures\Recursion;Source\DataStructures\Sort"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
   </CompilerOptions>

@@ -7,7 +7,7 @@ procedure Run;
 implementation
 
 uses
-  X_DSA.InversePolishCalculator;
+  X_DSA.SelectSort;
 
 procedure Run;
 begin

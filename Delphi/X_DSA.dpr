@@ -8,11 +8,15 @@ uses
   System.SysUtils,
   X_DSA.Main in 'Source\X_DSA.Main.pas',
   X_DSA.Utils in 'Source\X_DSA.Utils.pas',
-  X_DSA.SparseArray in 'Source\Code_Implementation\X_DSA.SparseArray.pas',
-  X_DSA.LinkedList in 'Source\Code_Implementation\X_DSA.LinkedList.pas',
-  X_DSA.DoubleLinkedList in 'Source\Code_Implementation\X_DSA.DoubleLinkedList.pas',
-  X_DSA.CircularLinkedList in 'Source\Code_Implementation\X_DSA.CircularLinkedList.pas',
-  X_DSA.InversePolishCalculator in 'Source\Code_Implementation\X_DSA.InversePolishCalculator.pas';
+  X_DSA.CircularLinkedList in 'Source\DataStructures\LinkedList\X_DSA.CircularLinkedList.pas',
+  X_DSA.DoubleLinkedList in 'Source\DataStructures\LinkedList\X_DSA.DoubleLinkedList.pas',
+  X_DSA.LinkedList in 'Source\DataStructures\LinkedList\X_DSA.LinkedList.pas',
+  X_DSA.MiGong in 'Source\DataStructures\Recursion\X_DSA.MiGong.pas',
+  X_DSA.Queen8 in 'Source\DataStructures\Recursion\X_DSA.Queen8.pas',
+  X_DSA.SparseArray in 'Source\DataStructures\SparseArray\X_DSA.SparseArray.pas',
+  X_DSA.InversePolishCalculator in 'Source\DataStructures\Stack\X_DSA.InversePolishCalculator.pas',
+  X_DSA.BubbleSort in 'Source\DataStructures\Sort\X_DSA.BubbleSort.pas',
+  X_DSA.SelectSort in 'Source\DataStructures\Sort\X_DSA.SelectSort.pas';
 
 begin
   try

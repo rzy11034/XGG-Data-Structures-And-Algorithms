@@ -153,11 +153,15 @@
         </DelphiCompile>
         <DCCReference Include="Source\X_DSA.Main.pas"/>
         <DCCReference Include="Source\X_DSA.Utils.pas"/>
-        <DCCReference Include="Source\Code_Implementation\X_DSA.SparseArray.pas"/>
-        <DCCReference Include="Source\Code_Implementation\X_DSA.LinkedList.pas"/>
-        <DCCReference Include="Source\Code_Implementation\X_DSA.DoubleLinkedList.pas"/>
-        <DCCReference Include="Source\Code_Implementation\X_DSA.CircularLinkedList.pas"/>
-        <DCCReference Include="Source\Code_Implementation\X_DSA.InversePolishCalculator.pas"/>
+        <DCCReference Include="Source\DataStructures\LinkedList\X_DSA.CircularLinkedList.pas"/>
+        <DCCReference Include="Source\DataStructures\LinkedList\X_DSA.DoubleLinkedList.pas"/>
+        <DCCReference Include="Source\DataStructures\LinkedList\X_DSA.LinkedList.pas"/>
+        <DCCReference Include="Source\DataStructures\Recursion\X_DSA.MiGong.pas"/>
+        <DCCReference Include="Source\DataStructures\Recursion\X_DSA.Queen8.pas"/>
+        <DCCReference Include="Source\DataStructures\SparseArray\X_DSA.SparseArray.pas"/>
+        <DCCReference Include="Source\DataStructures\Stack\X_DSA.InversePolishCalculator.pas"/>
+        <DCCReference Include="Source\DataStructures\Sort\X_DSA.BubbleSort.pas"/>
+        <DCCReference Include="Source\DataStructures\Sort\X_DSA.SelectSort.pas"/>
         <None Include="Source\目录.txt"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>

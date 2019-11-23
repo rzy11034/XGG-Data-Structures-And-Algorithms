@@ -13,8 +13,13 @@ uses
   X_DSA.CircularLinkedList,
   X_DSA.DoubleLinkedList,
   X_DSA.LinkedList,
+  X_DSA.InversePolishCalculator,
+  X_DSA.MiGong,
+  X_DSA.Queen8,
   X_DSA.SparseArray,
-  X_DSA.InversePolishCalculator, X_DSA.MiGong, X_DSA.Queen8;
+  X_DSA.BubbleSort,
+  X_DSA.SelectSort,
+  X_DSA.InsertSort;
 
 begin
   try
