@@ -19,7 +19,8 @@ uses
   X_DSA.SparseArray,
   X_DSA.BubbleSort,
   X_DSA.SelectSort,
-  X_DSA.InsertSort, unit1;
+  X_DSA.InsertSort,
+  X_DSA.ShellSort, unit1;
 
 begin
   try

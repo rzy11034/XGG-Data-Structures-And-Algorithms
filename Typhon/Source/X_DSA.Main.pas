@@ -12,7 +12,7 @@ procedure Run;
 
 implementation
 
-uses X_DSA.InsertSort;
+uses X_DSA.ShellSort;
 
 procedure Run;
 begin
