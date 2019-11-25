@@ -163,6 +163,8 @@
         <DCCReference Include="Source\DataStructures\Sort\X_DSA.BubbleSort.pas"/>
         <DCCReference Include="Source\DataStructures\Sort\X_DSA.SelectSort.pas"/>
         <DCCReference Include="Source\DataStructures\Sort\X_DSA.InsertSort.pas"/>
+        <DCCReference Include="Source\DataStructures\Sort\X_DSA.ShellSort.pas"/>
+        <DCCReference Include="Source\DataStructures\Sort\X_DSA.QuickSort.pas"/>
         <None Include="Source\目录.txt"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>

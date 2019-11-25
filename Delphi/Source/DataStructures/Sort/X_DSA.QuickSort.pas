@@ -1,12 +1,6 @@
 ﻿unit X_DSA.QuickSort;
 
-{$mode objfpc}{$H+}
-
 interface
-
-uses
-  Classes,
-  SysUtils;
 
 procedure Main;
 procedure QuickSort(var arr: array of integer);
@@ -33,7 +27,7 @@ var
 begin
   l := left;
   r := right;
-  //pivot 中轴值
+  // pivot 中轴值
   pivot := arr[l + (r - l) div 2];
 
   // while循环的目的是让比 pivot 值小放到左边, 比 pivot 值大放到右边
@@ -60,7 +54,7 @@ begin
     // 如果交换完后，发现这个 arr[l] = pivot值 相等 r--， 前移
     if arr[l] = pivot then
       Dec(r);
-    //如果交换完后，发现这 个arr[r] == pivot值 相等 l++， 后移
+    // 如果交换完后，发现这 个arr[r] == pivot值 相等 l++， 后移
     if arr[r] = pivot then
       Inc(l);
   end;
@@ -68,14 +62,14 @@ begin
   // 如果 l == r, 必须 l+1, r-1, 否则为出现栈溢出
   if l = r then
   begin
-    l += 1;
-    r -= 1;
+    Inc(l);
+    Dec(r);
   end;
 
-  //向左递归
+  // 向左递归
   if left < r then
     __quickSort(arr, left, r);
-  //向右递归
+  // 向右递归
   if right > l then
     __quickSort(arr, l, right);
 end;

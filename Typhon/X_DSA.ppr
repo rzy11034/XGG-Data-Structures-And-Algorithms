@@ -20,7 +20,7 @@ uses
   X_DSA.BubbleSort,
   X_DSA.SelectSort,
   X_DSA.InsertSort,
-  X_DSA.ShellSort, unit1;
+  X_DSA.ShellSort, X_DSA.QuickSort;
 
 begin
   try

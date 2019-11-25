@@ -12,7 +12,7 @@ procedure Run;
 
 implementation
 
-uses X_DSA.ShellSort;
+uses X_DSA.QuickSort;
 
 procedure Run;
 begin

@@ -7,7 +7,7 @@ procedure Run;
 implementation
 
 uses
-  X_DSA.SelectSort;
+  X_DSA.ShellSort;
 
 procedure Run;
 begin
