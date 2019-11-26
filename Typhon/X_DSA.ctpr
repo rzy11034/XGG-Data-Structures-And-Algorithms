@@ -22,7 +22,7 @@
           <PathDelim Value="\"/>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value="Source;Source\DataStructures\Stack;Source\DataStructures\SparseArray;Source\DataStructures\LinkedList;Source\DataStructures\Recursion;Source\DataStructures\Sort"/>
+            <OtherUnitFiles Value="Source;Source\DataStructures\Stack;Source\DataStructures\SparseArray;Source\DataStructures\LinkedList;Source\DataStructures\Recursion;Source\DataStructures\Sort;Source\DataStructures\Search"/>
             <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <Parsing>
@@ -48,7 +48,7 @@
           </Linking>
           <Other>
             <CompilerMessages>
-              <IgnoredMessages idx6058="True" idx4105="True" idx4104="True"/>
+              <IgnoredMessages idx6058="True" idx4105="True" idx4104="True" idx4079="True"/>
             </CompilerMessages>
           </Other>
         </CompilerOptions>
@@ -59,7 +59,7 @@
           <PathDelim Value="\"/>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value="Source;Source\DataStructures\Stack;Source\DataStructures\SparseArray;Source\DataStructures\LinkedList;Source\DataStructures\Recursion;Source\DataStructures\Sort"/>
+            <OtherUnitFiles Value="Source;Source\DataStructures\Stack;Source\DataStructures\SparseArray;Source\DataStructures\LinkedList;Source\DataStructures\Recursion;Source\DataStructures\Sort;Source\DataStructures\Search"/>
             <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <CodeGeneration>
@@ -156,6 +156,22 @@
         <Filename Value="Source\DataStructures\Sort\X_DSA.MergeSort.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="Source\DataStructures\Sort\X_DSA.RadixSort.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\DataStructures\Sort\X_DSA.SortComparer.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\DataStructures\Search\X_DSA.SeqSearch.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\DataStructures\Search\X_DSA.BinarySearch.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -163,7 +179,7 @@
     <PathDelim Value="\"/>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="Source;Source\DataStructures\Stack;Source\DataStructures\SparseArray;Source\DataStructures\LinkedList;Source\DataStructures\Recursion;Source\DataStructures\Sort"/>
+      <OtherUnitFiles Value="Source;Source\DataStructures\Stack;Source\DataStructures\SparseArray;Source\DataStructures\LinkedList;Source\DataStructures\Recursion;Source\DataStructures\Sort;Source\DataStructures\Search"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
   </CompilerOptions>

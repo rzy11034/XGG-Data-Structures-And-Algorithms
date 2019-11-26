@@ -7,7 +7,7 @@ procedure Run;
 implementation
 
 uses
-  X_DSA.MergeSort;
+  X_DSA.SortComparer;
 
 procedure Run;
 begin

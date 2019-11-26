@@ -20,7 +20,9 @@ uses
   X_DSA.InsertSort in 'Source\DataStructures\Sort\X_DSA.InsertSort.pas',
   X_DSA.ShellSort in 'Source\DataStructures\Sort\X_DSA.ShellSort.pas',
   X_DSA.QuickSort in 'Source\DataStructures\Sort\X_DSA.QuickSort.pas',
-  X_DSA.MergeSort in 'Source\DataStructures\Sort\X_DSA.MergeSort.pas';
+  X_DSA.MergeSort in 'Source\DataStructures\Sort\X_DSA.MergeSort.pas',
+  X_DSA.RadixSort in 'Source\DataStructures\Sort\X_DSA.RadixSort.pas',
+  X_DSA.SortComparer in 'Source\DataStructures\Sort\X_DSA.SortComparer.pas';
 
 begin
   try

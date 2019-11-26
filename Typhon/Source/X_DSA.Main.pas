@@ -12,8 +12,7 @@ procedure Run;
 
 implementation
 
-uses
-  X_DSA.MergeSort;
+uses X_DSA.BinarySearch;
 
 procedure Run;
 begin
