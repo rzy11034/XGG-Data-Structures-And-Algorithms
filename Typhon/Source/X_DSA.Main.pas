@@ -12,7 +12,8 @@ procedure Run;
 
 implementation
 
-uses X_DSA.QuickSort;
+uses
+  X_DSA.MergeSort;
 
 procedure Run;
 begin

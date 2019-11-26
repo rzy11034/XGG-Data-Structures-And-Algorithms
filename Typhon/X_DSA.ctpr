@@ -152,6 +152,10 @@
         <Filename Value="Source\DataStructures\Sort\X_DSA.QuickSort.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="Source\DataStructures\Sort\X_DSA.MergeSort.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

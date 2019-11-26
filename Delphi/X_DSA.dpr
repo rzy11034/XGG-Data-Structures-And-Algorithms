@@ -19,7 +19,8 @@ uses
   X_DSA.SelectSort in 'Source\DataStructures\Sort\X_DSA.SelectSort.pas',
   X_DSA.InsertSort in 'Source\DataStructures\Sort\X_DSA.InsertSort.pas',
   X_DSA.ShellSort in 'Source\DataStructures\Sort\X_DSA.ShellSort.pas',
-  X_DSA.QuickSort in 'Source\DataStructures\Sort\X_DSA.QuickSort.pas';
+  X_DSA.QuickSort in 'Source\DataStructures\Sort\X_DSA.QuickSort.pas',
+  X_DSA.MergeSort in 'Source\DataStructures\Sort\X_DSA.MergeSort.pas';
 
 begin
   try

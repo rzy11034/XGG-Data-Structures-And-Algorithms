@@ -6,7 +6,7 @@ interface
 
 uses
   Classes,
-  SysUtils;
+  SysUtils,gvector;
 
 procedure Main;
 procedure InsertSort(var arr: array of integer);

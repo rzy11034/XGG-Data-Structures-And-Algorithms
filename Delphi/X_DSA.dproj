@@ -165,6 +165,7 @@
         <DCCReference Include="Source\DataStructures\Sort\X_DSA.InsertSort.pas"/>
         <DCCReference Include="Source\DataStructures\Sort\X_DSA.ShellSort.pas"/>
         <DCCReference Include="Source\DataStructures\Sort\X_DSA.QuickSort.pas"/>
+        <DCCReference Include="Source\DataStructures\Sort\X_DSA.MergeSort.pas"/>
         <None Include="Source\目录.txt"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>

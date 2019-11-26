@@ -16,6 +16,7 @@
     <File Path="Source\DataStructures\Sort\X_DSA.InsertSort.pas"/>
     <File Path="Source\DataStructures\Sort\X_DSA.ShellSort.pas"/>
     <File Path="Source\DataStructures\Sort\X_DSA.QuickSort.pas"/>
+    <File Path="Source\DataStructures\Sort\X_DSA.MergeSort.pas"/>
     <File Path="Source\DataStructures\SparseArray"/>
     <File Path="Source\DataStructures\SparseArray\X_DSA.SparseArray.pas"/>
     <File Path="Source\DataStructures\Stack"/>
@@ -25,8 +26,8 @@
     <File Path="Source\目录.txt"/>
   </ProjectSortOrder>
 	<Transactions>
-    <Transaction>2019/11/18 00:12:35.000.106,=C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\Code_Implementation\X_DSA.C021_22_23.pas</Transaction>
     <Transaction>2019/11/18 00:12:35.000.063,=C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\Code_Implementation\X_DSA.C009_SparseArray.pas</Transaction>
+    <Transaction>2019/11/18 00:12:35.000.106,=C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\Code_Implementation\X_DSA.C021_22_23.pas</Transaction>
     <Transaction>2019/11/18 00:14:15.000.252,C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\Data_Structures\X_DSA.SparseArray.pas=</Transaction>
     <Transaction>2019/11/18 22:21:54.000.929,D:\Users\dell\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\Code_Implementation\X_DSA.LinkList.pas=D:\Users\dell\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\Code_Implementation\X_DSA.C021_22_23.pas</Transaction>
     <Transaction>2019/11/18 22:22:08.000.793,D:\Users\dell\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\Code_Implementation\X_DSA.SparseArray.pas=D:\Users\dell\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\Code_Implementation\X_DSA.C009_SparseArray.pas</Transaction>
@@ -42,18 +43,18 @@
     <Transaction>2019/11/22 18:24:46.000.414,C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Unit1.pas=C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\Code_Implementation\X_DSA.MiGong.pas</Transaction>
     <Transaction>2019/11/22 18:27:41.000.028,=C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Unit1.pas</Transaction>
     <Transaction>2019/11/22 18:27:52.000.382,C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Unit1.pas=C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\Code_Implementation\X_DSA.Queen8.pas</Transaction>
-    <Transaction>2019/11/22 19:30:40.000.957,C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\Code_Implementation\X_DSA.DoubleLinkedList.pas=</Transaction>
     <Transaction>2019/11/22 19:30:40.000.736,C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\Code_Implementation\X_DSA.CircularLinkedList.pas=</Transaction>
     <Transaction>2019/11/22 19:30:40.000.982,C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\Code_Implementation\X_DSA.LinkedList.pas=</Transaction>
-    <Transaction>2019/11/22 19:30:41.000.030,C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\Code_Implementation\X_DSA.InversePolishCalculator.pas=</Transaction>
+    <Transaction>2019/11/22 19:30:40.000.957,C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\Code_Implementation\X_DSA.DoubleLinkedList.pas=</Transaction>
+    <Transaction>2019/11/22 19:30:41.000.056,C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\Code_Implementation\X_DSA.MiGong.pas=</Transaction>
     <Transaction>2019/11/22 19:30:41.000.077,C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\Code_Implementation\X_DSA.Queen8.pas=</Transaction>
     <Transaction>2019/11/22 19:30:41.000.007,C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\Code_Implementation\X_DSA.SparseArray.pas=</Transaction>
-    <Transaction>2019/11/22 19:30:41.000.056,C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\Code_Implementation\X_DSA.MiGong.pas=</Transaction>
+    <Transaction>2019/11/22 19:30:41.000.030,C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\Code_Implementation\X_DSA.InversePolishCalculator.pas=</Transaction>
     <Transaction>2019/11/22 19:33:32.000.096,=C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\DataStructures\LinkedList\X_DSA.DoubleLinkedList.pas</Transaction>
     <Transaction>2019/11/22 19:33:32.000.044,=C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\DataStructures\LinkedList\X_DSA.CircularLinkedList.pas</Transaction>
     <Transaction>2019/11/22 19:33:33.000.724,=C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\DataStructures\LinkedList\X_DSA.LinkedList.pas</Transaction>
-    <Transaction>2019/11/22 19:33:43.000.711,=C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\DataStructures\Recursion\X_DSA.Queen8.pas</Transaction>
     <Transaction>2019/11/22 19:33:43.000.676,=C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\DataStructures\Recursion\X_DSA.MiGong.pas</Transaction>
+    <Transaction>2019/11/22 19:33:43.000.711,=C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\DataStructures\Recursion\X_DSA.Queen8.pas</Transaction>
     <Transaction>2019/11/22 19:33:59.000.196,=C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\DataStructures\SparseArray\X_DSA.SparseArray.pas</Transaction>
     <Transaction>2019/11/22 19:34:11.000.187,=C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\DataStructures\Stack\X_DSA.InversePolishCalculator.pas</Transaction>
     <Transaction>2019/11/22 22:24:12.000.016,=C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Unit1.pas</Transaction>
@@ -64,7 +65,9 @@
     <Transaction>2019/11/23 09:16:31.000.779,D:\Users\dell\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\DataStructures\Sort\X_DSA.InsertSort.pas=D:\Users\dell\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Unit1.pas</Transaction>
     <Transaction>2019/11/25 01:56:55.000.605,=C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Unit1.pas</Transaction>
     <Transaction>2019/11/25 01:57:49.000.803,C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Unit1.pas=C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\DataStructures\Sort\X_DSA.ShellSort.pas</Transaction>
-    <Transaction>2019/11/26 00:46:58.059,=C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Unit1.pas</Transaction>
-    <Transaction>2019/11/26 00:52:16.857,C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\DataStructures\Sort\X_DSA.QuickSort.pas=C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Unit1.pas</Transaction>
+    <Transaction>2019/11/26 00:46:58.000.059,=C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Unit1.pas</Transaction>
+    <Transaction>2019/11/26 00:52:16.000.857,C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\DataStructures\Sort\X_DSA.QuickSort.pas=C:\Users\Administrator\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Unit1.pas</Transaction>
+    <Transaction>2019/11/26 10:52:39.000.822,=D:\Users\dell\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Unit1.pas</Transaction>
+    <Transaction>2019/11/26 10:56:43.000.711,D:\Users\dell\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Unit1.pas=D:\Users\dell\Documents\Projects\Git\XGG_Data_Structures_and_Algorithms\Delphi\Source\DataStructures\Sort\X_DSA.MergeSort.pas</Transaction>
   </Transactions>
 </BorlandProject>
