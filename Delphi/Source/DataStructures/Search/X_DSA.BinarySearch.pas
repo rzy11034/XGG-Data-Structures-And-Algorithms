@@ -1,16 +1,12 @@
 ﻿unit X_DSA.BinarySearch;
 
-{$mode objfpc}{$H+}
-
 interface
 
 uses
-  Classes,
-  SysUtils,
-  gvector;
+  System.Generics.Collections;
 
 type
-  TVectorOfInt = specialize TVector<integer>;
+  TListOfInt = TList<integer>;
 
 procedure Main;
 function BinarySearch(const arr: array of integer; Value: integer): integer;
@@ -24,7 +20,7 @@ function BinarySearch(const arr: array of integer; Value: integer): integer;
    * 3. 向mid 索引值的右边扫描，将所有满足 1000， 的元素的下标，加入到集合ArrayList
    * 4. 将Arraylist返回
    *}
-function BinarySearch2(const arr: array of integer; Value: integer): TVectorOfInt;
+function BinarySearch2(const arr: array of integer; Value: integer): TListOfInt;
 
 implementation
 
@@ -36,7 +32,7 @@ begin
   a := [1, 2, 3, 4, 5, 5, 5, 5, 5, 6, 7, 8, 9];
 
   if BinarySearch2(a, 5) <> nil then
-    for i := 0 to BinarySearch2(a, 5).Size - 1 do
+    for i := 0 to BinarySearch2(a, 5).Count - 1 do
     begin
       Write(BinarySearch2(a, 5)[i], ' ');
     end
@@ -69,10 +65,10 @@ begin
   Result := __binarySearch(arr, 0, Length(arr) - 1, Value);
 end;
 
-function __binarySearch2(const arr: array of integer; left, right, Value: integer): TVectorOfInt;
+function __binarySearch2(const arr: array of integer; left, right, Value: integer): TListOfInt;
 var
   mid, tmpL, tmpR, i: integer;
-  ret: TVectorOfInt;
+  ret: TListOfInt;
 begin
   if left > right then
   begin
@@ -98,16 +94,16 @@ begin
     while (tmpR + 1 < Length(arr)) and (arr[tmpR + 1] = arr[mid]) do
       Inc(tmpR);
 
-    // 将 arr[tmpL .. tmpR] 区间的元素下标加入到 TVectorOfInt
-    ret := TVectorOfInt.Create;
+    // 将 arr[tmpL .. tmpR] 区间的元素下标加入到 TListOfInt
+    ret := TListOfInt.Create;
     for i := tmpL to tmpR do
-      ret.PushBack(i);
+      ret.Add(i);
 
     Result := ret;
   end;
 end;
 
-function BinarySearch2(const arr: array of integer; Value: integer): TVectorOfInt;
+function BinarySearch2(const arr: array of integer; Value: integer): TListOfInt;
 begin
   Result := __binarySearch2(arr, 0, Length(arr) - 1, Value);
 end;

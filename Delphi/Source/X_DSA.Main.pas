@@ -7,7 +7,7 @@ procedure Run;
 implementation
 
 uses
-  X_DSA.SortComparer;
+  X_DSA.BinarySearch;
 
 procedure Run;
 begin
