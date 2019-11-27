@@ -25,7 +25,9 @@ uses
   X_DSA.MergeSort,
   X_DSA.RadixSort,
   X_DSA.SortComparer,
-  X_DSA.SeqSearch, X_DSA.BinarySearch;
+  X_DSA.SeqSearch,
+  X_DSA.BinarySearch,
+  X_DSA.InsertValueSearch;
 
 begin
   try

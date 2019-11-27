@@ -12,7 +12,7 @@ procedure Run;
 
 implementation
 
-uses X_DSA.BinarySearch;
+uses X_DSA.InsertValueSearch;
 
 procedure Run;
 begin

@@ -172,6 +172,10 @@
         <Filename Value="Source\DataStructures\Search\X_DSA.BinarySearch.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="Source\DataStructures\Search\X_DSA.InsertValueSearch.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

@@ -13,7 +13,7 @@ type
   TVectorOfInt = specialize TVector<integer>;
 
 procedure Main;
-function BinarySearch(const arr: array of integer; Value: integer): integer;
+function BinarySearch(const arr: array of integer; findVal: integer): integer;
 
   {*
    * 有多个相同的数值时，如何将所有的数值都查找到，比如这里的 1000
@@ -24,7 +24,7 @@ function BinarySearch(const arr: array of integer; Value: integer): integer;
    * 3. 向mid 索引值的右边扫描，将所有满足 1000， 的元素的下标，加入到集合ArrayList
    * 4. 将Arraylist返回
    *}
-function BinarySearch2(const arr: array of integer; Value: integer): TVectorOfInt;
+function BinarySearch2(const arr: array of integer; findVal: integer): TVectorOfInt;
 
 implementation
 
@@ -44,7 +44,7 @@ begin
     Write(' ');
 end;
 
-function __binarySearch(const arr: array of integer; left, right, Value: integer): integer;
+function __binarySearch(const arr: array of integer; left, right, findVal: integer): integer;
 var
   mid: integer;
 begin
@@ -56,20 +56,20 @@ begin
 
   mid := left + (right - left) div 2;
 
-  if Value < arr[mid] then
-    Result := __binarySearch(arr, left, mid - 1, Value)
-  else if Value > arr[mid] then
-    Result := __binarySearch(arr, mid + 1, right, Value)
+  if findVal < arr[mid] then
+    Result := __binarySearch(arr, left, mid - 1, findVal)
+  else if findVal > arr[mid] then
+    Result := __binarySearch(arr, mid + 1, right, findVal)
   else
     Result := mid;
 end;
 
-function BinarySearch(const arr: array of integer; Value: integer): integer;
+function BinarySearch(const arr: array of integer; findVal: integer): integer;
 begin
-  Result := __binarySearch(arr, 0, Length(arr) - 1, Value);
+  Result := __binarySearch(arr, 0, Length(arr) - 1, findVal);
 end;
 
-function __binarySearch2(const arr: array of integer; left, right, Value: integer): TVectorOfInt;
+function __binarySearch2(const arr: array of integer; left, right, findVal: integer): TVectorOfInt;
 var
   mid, tmpL, tmpR, i: integer;
   ret: TVectorOfInt;
@@ -82,10 +82,10 @@ begin
 
   mid := left + (right - left) div 2;
 
-  if Value < arr[mid] then
-    Result := __binarySearch2(arr, left, mid - 1, Value)
-  else if Value > arr[mid] then
-    Result := __binarySearch2(arr, mid + 1, right, Value)
+  if findVal < arr[mid] then
+    Result := __binarySearch2(arr, left, mid - 1, findVal)
+  else if findVal > arr[mid] then
+    Result := __binarySearch2(arr, mid + 1, right, findVal)
   else
   begin
     // 向 mid 索引值的左边扫描，标记 arr[tmpL] = arr[mid] 的元素的起始下标
@@ -107,9 +107,9 @@ begin
   end;
 end;
 
-function BinarySearch2(const arr: array of integer; Value: integer): TVectorOfInt;
+function BinarySearch2(const arr: array of integer; findVal: integer): TVectorOfInt;
 begin
-  Result := __binarySearch2(arr, 0, Length(arr) - 1, Value);
+  Result := __binarySearch2(arr, 0, Length(arr) - 1, findVal);
 end;
 
 end.
