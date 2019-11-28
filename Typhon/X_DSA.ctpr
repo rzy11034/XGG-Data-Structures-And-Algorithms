@@ -22,7 +22,7 @@
           <PathDelim Value="\"/>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value="Source;Source\DataStructures\Stack;Source\DataStructures\SparseArray;Source\DataStructures\LinkedList;Source\DataStructures\Recursion;Source\DataStructures\Sort;Source\DataStructures\Search"/>
+            <OtherUnitFiles Value="Source;Source\DataStructures\Stack;Source\DataStructures\SparseArray;Source\DataStructures\LinkedList;Source\DataStructures\Recursion;Source\DataStructures\Sort;Source\DataStructures\Search;Source\DataStructures\HashTable"/>
             <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <Parsing>
@@ -59,7 +59,7 @@
           <PathDelim Value="\"/>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value="Source;Source\DataStructures\Stack;Source\DataStructures\SparseArray;Source\DataStructures\LinkedList;Source\DataStructures\Recursion;Source\DataStructures\Sort;Source\DataStructures\Search"/>
+            <OtherUnitFiles Value="Source;Source\DataStructures\Stack;Source\DataStructures\SparseArray;Source\DataStructures\LinkedList;Source\DataStructures\Recursion;Source\DataStructures\Sort;Source\DataStructures\Search;Source\DataStructures\HashTable"/>
             <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <CodeGeneration>
@@ -176,6 +176,14 @@
         <Filename Value="Source\DataStructures\Search\X_DSA.InsertValueSearch.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="Source\DataStructures\Search\X_DSA.FibonacciSearch.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -183,7 +191,7 @@
     <PathDelim Value="\"/>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="Source;Source\DataStructures\Stack;Source\DataStructures\SparseArray;Source\DataStructures\LinkedList;Source\DataStructures\Recursion;Source\DataStructures\Sort;Source\DataStructures\Search"/>
+      <OtherUnitFiles Value="Source;Source\DataStructures\Stack;Source\DataStructures\SparseArray;Source\DataStructures\LinkedList;Source\DataStructures\Recursion;Source\DataStructures\Sort;Source\DataStructures\Search;Source\DataStructures\HashTable"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
   </CompilerOptions>

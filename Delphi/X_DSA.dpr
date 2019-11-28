@@ -24,7 +24,9 @@ uses
   X_DSA.RadixSort in 'Source\DataStructures\Sort\X_DSA.RadixSort.pas',
   X_DSA.SortComparer in 'Source\DataStructures\Sort\X_DSA.SortComparer.pas',
   X_DSA.SeqSearch in 'Source\DataStructures\Search\X_DSA.SeqSearch.pas',
-  X_DSA.BinarySearch in 'Source\DataStructures\Search\X_DSA.BinarySearch.pas';
+  X_DSA.BinarySearch in 'Source\DataStructures\Search\X_DSA.BinarySearch.pas',
+  X_DSA.InsertValueSearch in 'Source\DataStructures\Search\X_DSA.InsertValueSearch.pas',
+  X_DSA.FibonacciSearch in 'Source\DataStructures\Search\X_DSA.FibonacciSearch.pas';
 
 begin
   try

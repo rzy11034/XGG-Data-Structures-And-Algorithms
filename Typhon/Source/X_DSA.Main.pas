@@ -12,7 +12,7 @@ procedure Run;
 
 implementation
 
-uses X_DSA.InsertValueSearch;
+uses X_DSA.FibonacciSearch;
 
 procedure Run;
 begin

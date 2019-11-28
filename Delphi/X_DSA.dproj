@@ -170,6 +170,8 @@
         <DCCReference Include="Source\DataStructures\Sort\X_DSA.SortComparer.pas"/>
         <DCCReference Include="Source\DataStructures\Search\X_DSA.SeqSearch.pas"/>
         <DCCReference Include="Source\DataStructures\Search\X_DSA.BinarySearch.pas"/>
+        <DCCReference Include="Source\DataStructures\Search\X_DSA.InsertValueSearch.pas"/>
+        <DCCReference Include="Source\DataStructures\Search\X_DSA.FibonacciSearch.pas"/>
         <None Include="Source\目录.txt"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
