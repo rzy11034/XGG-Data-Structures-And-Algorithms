@@ -10,7 +10,7 @@
         <FRMtype Value="0"/>
         <IsPartOfProject Value="True"/>
         <TopLine Value="16"/>
-        <CursorPos X="57" Y="30"/>
+        <CursorPos X="23" Y="32"/>
         <UsageCount Value="221"/>
         <Loaded Value="True"/>
       </Unit>
@@ -18,7 +18,7 @@
         <Filename Value="Source\X_DSA.Main.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="2"/>
-        <CursorPos X="14" Y="22"/>
+        <CursorPos X="20" Y="20"/>
         <UsageCount Value="221"/>
         <Loaded Value="True"/>
       </Unit>
@@ -48,7 +48,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="185"/>
+        <UsageCount Value="200"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\LinkedList\X_DSA.CircularLinkedList.pas"/>
@@ -57,7 +57,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="185"/>
+        <UsageCount Value="200"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\LinkedList\X_DSA.LinkedList.pas"/>
@@ -66,7 +66,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="185"/>
+        <UsageCount Value="200"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\LinkedList\X_DSA.DoubleLinkedList.pas"/>
@@ -75,16 +75,14 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="185"/>
+        <UsageCount Value="200"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Stack\X_DSA.InversePolishCalculator.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <TopLine Value="-1"/>
-        <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="185"/>
+        <TopLine Value="295"/>
+        <UsageCount Value="200"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Recursion\X_DSA.MiGong.pas"/>
@@ -93,7 +91,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="185"/>
+        <UsageCount Value="200"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Recursion\X_DSA.Queen8.pas"/>
@@ -102,14 +100,14 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="185"/>
+        <UsageCount Value="200"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Sort\X_DSA.BubbleSort.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="11" Y="62"/>
-        <UsageCount Value="185"/>
+        <UsageCount Value="200"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Sort\X_DSA.SelectSort.pas"/>
@@ -117,14 +115,14 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="16"/>
         <CursorPos X="30" Y="23"/>
-        <UsageCount Value="179"/>
+        <UsageCount Value="196"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Sort\X_DSA.InsertSort.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="12" Y="9"/>
-        <UsageCount Value="177"/>
+        <UsageCount Value="194"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Sort\X_DSA.ShellSort.pas"/>
@@ -132,7 +130,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="6"/>
         <CursorPos X="13" Y="28"/>
-        <UsageCount Value="174"/>
+        <UsageCount Value="191"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Sort\X_DSA.QuickSort.pas"/>
@@ -140,21 +138,21 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="5"/>
         <CursorPos X="24" Y="21"/>
-        <UsageCount Value="96"/>
+        <UsageCount Value="113"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Sort\X_DSA.MergeSort.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="11" Y="9"/>
-        <UsageCount Value="48"/>
+        <UsageCount Value="65"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Sort\X_DSA.RadixSort.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="58" Y="31"/>
-        <UsageCount Value="39"/>
+        <UsageCount Value="56"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Sort\X_DSA.SortComparer.pas"/>
@@ -162,7 +160,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="58"/>
         <CursorPos X="62" Y="36"/>
-        <UsageCount Value="35"/>
+        <UsageCount Value="52"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Search\X_DSA.SeqSearch.pas"/>
@@ -170,7 +168,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="26"/>
         <CursorPos X="9" Y="40"/>
-        <UsageCount Value="33"/>
+        <UsageCount Value="50"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Search\X_DSA.BinarySearch.pas"/>
@@ -178,7 +176,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="35"/>
         <CursorPos X="22" Y="44"/>
-        <UsageCount Value="33"/>
+        <UsageCount Value="50"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Search\X_DSA.InsertValueSearch.pas"/>
@@ -186,15 +184,24 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="12"/>
         <CursorPos X="94" Y="54"/>
-        <UsageCount Value="27"/>
+        <UsageCount Value="44"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Search\X_DSA.FibonacciSearch.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="2"/>
         <CursorPos X="5" Y="73"/>
-        <UsageCount Value="26"/>
+        <UsageCount Value="43"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="78"/>
+        <CursorPos Y="85"/>
+        <UsageCount Value="40"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -202,65 +209,65 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="69"/>
         <CursorPos X="35" Y="52"/>
-        <UsageCount Value="59"/>
+        <UsageCount Value="57"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Code_Implementation\X_DSA.LinkedList.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="27"/>
         <CursorPos X="25" Y="46"/>
-        <UsageCount Value="58"/>
+        <UsageCount Value="56"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Code_Implementation\X_DSA.DoubleLinkedList.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="82"/>
         <CursorPos X="3" Y="87"/>
-        <UsageCount Value="52"/>
+        <UsageCount Value="50"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Code_Implementation\X_DSA.CircularLinkedList.pas"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="12" Y="9"/>
-        <UsageCount Value="47"/>
+        <UsageCount Value="45"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Code_Implementation\X_DSA.InversePolishCalculator.pas"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="24" Y="386"/>
-        <UsageCount Value="43"/>
+        <UsageCount Value="41"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Code_Implementation\X_DSA.MiGong.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="18"/>
         <CursorPos X="55" Y="91"/>
-        <UsageCount Value="13"/>
+        <UsageCount Value="11"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Code_Implementation\X_DSA.Queen8.pas"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="42" Y="83"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="8"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Data_Structures\X_DSA.LinkedList.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="157"/>
         <CursorPos X="45" Y="327"/>
-        <UsageCount Value="6"/>
+        <UsageCount Value="4"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Data_Structures\X_DSA.C009_SparseArrayCodeImplementation.pas"/>
         <EditorIndex Value="-1"/>
         <CursorPos Y="34"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\fcl-stl\src\garrayutils.pp"/>
         <FRMtype Value="0"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="6"/>
       </Unit>
       <Unit>
         <Filename Value="..\..\Data-Structures-and-Algorithms\Typhon\Source\Sorts\DSA.Sorts.QuickSort.pas"/>
@@ -268,7 +275,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="165"/>
         <CursorPos X="30" Y="190"/>
-        <UsageCount Value="7"/>
+        <UsageCount Value="5"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\rtl-generics\src\generics.collections.pas"/>
@@ -276,7 +283,7 @@
         <UnitName Value="Generics.Collections"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="510"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="8"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\fcl-base\src\contnrs.pp"/>
@@ -284,21 +291,21 @@
         <UnitName Value="Contnrs"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="151"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="6"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\fcl-stl\src\gvector.pp"/>
         <FRMtype Value="0"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="49"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\fcl-stl\src\gqueue.pp"/>
         <FRMtype Value="0"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="17"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\rtl\objpas\math.pp"/>
@@ -307,14 +314,14 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="477"/>
         <CursorPos X="10" Y="494"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\fcl-stl\src\gdeque.pp"/>
         <FRMtype Value="0"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="32" Y="218"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="6"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\rtl\objpas\sysutils\syshelph.inc"/>
@@ -322,7 +329,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="456"/>
         <CursorPos X="21" Y="468"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="6"/>
       </Unit>
       <Unit>
         <Filename Value="..\..\Data-Structures-and-Algorithms\Typhon\Source\DSA.Utils.pas"/>
@@ -330,7 +337,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="286"/>
         <CursorPos X="24" Y="307"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\rtl\objpas\objpas.pp"/>
@@ -338,61 +345,141 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="34"/>
         <CursorPos X="8" Y="48"/>
-        <UsageCount Value="9"/>
-      </Unit>
-      <Unit>
-        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
-        <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="4"/>
-        <TopLine Value="30"/>
-        <CursorPos X="33" Y="55"/>
-        <UsageCount Value="23"/>
-        <Loaded Value="True"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\fcl-stl\src\ghashmap.pp"/>
         <FRMtype Value="0"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="371"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="8"/>
       </Unit>
     </Units>
-    <JumpHistory Count="5" HistoryIndex="4">
+    <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="X_DSA.ppr"/>
-        <Caret Line="30" Column="27" TopLine="14"/>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <Caret Line="103" TopLine="94"/>
       </Position1>
       <Position2>
-        <Filename Value="X_DSA.ppr"/>
-        <Caret Line="30" Column="50" TopLine="16"/>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <Caret Line="104" TopLine="94"/>
       </Position2>
       <Position3>
         <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
-        <Caret Line="19" Column="17"/>
+        <Caret Line="105" TopLine="94"/>
       </Position3>
       <Position4>
         <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
-        <Caret Line="30" Column="28" TopLine="10"/>
+        <Caret Line="170" TopLine="161"/>
       </Position4>
       <Position5>
         <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
-        <Caret Line="48" Column="19" TopLine="31"/>
+        <Caret Line="171" TopLine="161"/>
       </Position5>
+      <Position6>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <Caret Line="173" TopLine="161"/>
+      </Position6>
+      <Position7>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <Caret Line="187" TopLine="173"/>
+      </Position7>
+      <Position8>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <Caret Line="104" TopLine="94"/>
+      </Position8>
+      <Position9>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <Caret Line="105" TopLine="94"/>
+      </Position9>
+      <Position10>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <Caret Line="70" Column="16" TopLine="51"/>
+      </Position10>
+      <Position11>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <Caret Line="101" Column="16" TopLine="84"/>
+      </Position11>
+      <Position12>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <Caret Line="83" Column="14" TopLine="70"/>
+      </Position12>
+      <Position13>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <Caret Line="54" Column="38" TopLine="46"/>
+      </Position13>
+      <Position14>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <Caret Line="154" Column="91" TopLine="135"/>
+      </Position14>
+      <Position15>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <Caret Line="111" Column="10" TopLine="90"/>
+      </Position15>
+      <Position16>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <Caret Line="118" Column="7" TopLine="97"/>
+      </Position16>
+      <Position17>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <Caret Line="99" Column="44" TopLine="94"/>
+      </Position17>
+      <Position18>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <Caret Line="113" Column="11" TopLine="103"/>
+      </Position18>
+      <Position19>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <Caret Line="54" Column="18" TopLine="37"/>
+      </Position19>
+      <Position20>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <Caret Line="115" Column="11" TopLine="98"/>
+      </Position20>
+      <Position21>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <Caret Line="116" Column="14" TopLine="73"/>
+      </Position21>
+      <Position22>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <Caret Line="85" TopLine="73"/>
+      </Position22>
+      <Position23>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <Caret Line="96" Column="7" TopLine="82"/>
+      </Position23>
+      <Position24>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <Caret Line="116" Column="27" TopLine="101"/>
+      </Position24>
+      <Position25>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <Caret Line="117" Column="36" TopLine="73"/>
+      </Position25>
+      <Position26>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <Caret Line="85" TopLine="73"/>
+      </Position26>
+      <Position27>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <Caret Line="86" TopLine="76"/>
+      </Position27>
+      <Position28>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <Caret Line="116" TopLine="107"/>
+      </Position28>
+      <Position29>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <Caret Line="117" TopLine="107"/>
+      </Position29>
+      <Position30>
+        <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <Caret Line="120" TopLine="107"/>
+      </Position30>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes Count="0" ActiveMode=""/>
     </RunParams>
   </ProjectSession>
-  <Debugging>
-    <Watches Count="2">
-      <Item1>
-        <Expression Value="arr[tmpR]"/>
-      </Item1>
-      <Item2>
-        <Expression Value="arr[mid]"/>
-      </Item2>
-    </Watches>
-  </Debugging>
 </CONFIG>

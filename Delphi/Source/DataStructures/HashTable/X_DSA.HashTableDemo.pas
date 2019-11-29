@@ -1,17 +1,14 @@
 ﻿unit X_DSA.HashTableDemo;
 
-{$mode objfpc}{$H+}
-
 interface
 
 uses
-  Classes,
-  SysUtils,
-  TypInfo;
+  System.SysUtils,
+  System.TypInfo;
 
 type
 
-  TEmp = class   //表示一个雇员
+  TEmp = class //表示一个雇员
   public
     ID: integer;
     Name: string;
@@ -35,26 +32,26 @@ type
 
     // 根据 ID 查找雇员
     // 如果查找到，就返回 Emp, 如果没有找到，就返回 nil
-    function FindID(id: integer): TEmp;
+    function FindID(ID: integer): TEmp;
   end;
 
   THashTable = class
   private
-    __data: array of TEmpLinkedList;
+    __data: TArray<TEmpLinkedList>;
     __size: integer;
 
     function __getSize: integer;
-    function __hashFun(id: integer): integer;
+    function __hashFun(ID: integer): integer;
 
   public
     constructor Create(size: integer);
     destructor Destroy; override;
 
     procedure Add(emp: TEmp);
-    procedure Find(id: integer);
+    procedure Find(ID: integer);
     procedure Print;
 
-    property Size: integer read __getSize;
+    property size: integer read __getSize;
   end;
 
 procedure Main;
@@ -62,12 +59,12 @@ procedure Main;
 implementation
 
 type
-  TMeun = (add, list, find, exit);
+  TMeun = (Add, list, Find, exit);
 
 procedure Main;
 var
   ht: THashTable;
-  key, id, Name: string;
+  key, ID, Name: string;
   emp: TEmp;
   mn: TMeun;
 begin
@@ -84,37 +81,37 @@ begin
   begin
     mn := TMeun(GetEnumValue(TypeInfo(TMeun), key));
     case mn of
-      TMeun.add:
-      begin
-        WriteLn('输入ID:');
-        ReadLn(id);
-        WriteLn('输入名字:');
-        ReadLn(Name);
+      TMeun.Add:
+        begin
+          WriteLn('输入ID:');
+          readLn(ID);
+          WriteLn('输入名字:');
+          readLn(name);
 
-        emp := TEmp.Create(id.ToInteger, Name);
-        ht.Add(emp);
-      end;
+          emp := TEmp.Create(ID.ToInteger, name);
+          ht.Add(emp);
+        end;
 
       TMeun.list:
-      begin
-        ht.Print;
-      end;
+        begin
+          ht.Print;
+        end;
 
-      TMeun.find:
-      begin
-        WriteLn('请输入要查找的id');
-        ReadLn(id);
-        ht.Find(id.ToInteger);
-      end;
+      TMeun.Find:
+        begin
+          WriteLn('请输入要查找的id');
+          readLn(ID);
+          ht.Find(ID.ToInteger);
+        end;
 
       TMeun.exit:
-      begin
-        Break;
-      end;
+        begin
+          Break;
+        end;
 
-      else
-        WriteLn('输入错误!');
-        Break;
+    else
+      WriteLn('errer');
+      Break;
     end;
   end;
 end;
@@ -146,16 +143,16 @@ begin
   inherited Destroy;
 end;
 
-procedure THashTable.Find(id: integer);
+procedure THashTable.Find(ID: integer);
 var
   tmp: TEmp;
 begin
-  tmp := __data[__hashFun(id)].FindID(id);
+  tmp := __data[__hashFun(ID)].FindID(ID);
 
   if tmp = nil then
     WriteLn('在哈希表中，没有找到该雇员~')
   else
-    WriteLn(Format('在第%d条链表中找到 雇员 id = %d', [__hashFun(id) + 1, id]));
+    WriteLn(Format('在第%d条链表中找到 雇员 id = %d', [__hashFun(ID) + 1, ID]));
 end;
 
 procedure THashTable.Print;
@@ -166,9 +163,9 @@ begin
     __data[i].Print(i);
 end;
 
-function THashTable.__hashFun(id: integer): integer;
+function THashTable.__hashFun(ID: integer): integer;
 begin
-  Result := id mod __size;
+  Result := ID mod __size;
 end;
 
 function THashTable.__getSize: integer;
@@ -199,10 +196,12 @@ begin
   end;
 end;
 
-function TEmpLinkedList.FindID(id: integer): TEmp;
+function TEmpLinkedList.FindID(ID: integer): TEmp;
 var
   cur, ret: TEmp;
 begin
+  ret := nil;
+
   if __head = nil then
   begin
     ret := nil;
@@ -212,7 +211,7 @@ begin
     cur := __head;
 
     repeat
-      if cur.ID = id then
+      if cur.ID = ID then
       begin
         ret := cur;
         Break;
@@ -235,11 +234,11 @@ begin
   end
   else
   begin
-    Write('第 ', n + 1, ' 链表的信息为:');
+    write('第 ', n + 1, ' 链表的信息为:');
 
     cur := __head;
     repeat
-      Write(Format(' => id=%d name=%s ', [cur.ID, cur.Name]));
+      write(Format(' => id=%d name=%s ', [cur.ID, cur.Name]));
       cur := cur.Next;
     until cur = nil;
 
@@ -252,7 +251,7 @@ end;
 constructor TEmp.Create(newID: integer; newName: string);
 begin
   ID := newID;
-  Name := newName;
+  name := newName;
   Next := nil;
 end;
 

@@ -12,7 +12,7 @@ procedure Run;
 
 implementation
 
-uses X_DSA.FibonacciSearch;
+uses X_DSA.HashTableDemo;
 
 procedure Run;
 begin

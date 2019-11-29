@@ -7,7 +7,7 @@ procedure Run;
 implementation
 
 uses
-  X_DSA.BinarySearch;
+  X_DSA.HashTableDemo;
 
 procedure Run;
 begin

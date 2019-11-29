@@ -172,6 +172,7 @@
         <DCCReference Include="Source\DataStructures\Search\X_DSA.BinarySearch.pas"/>
         <DCCReference Include="Source\DataStructures\Search\X_DSA.InsertValueSearch.pas"/>
         <DCCReference Include="Source\DataStructures\Search\X_DSA.FibonacciSearch.pas"/>
+        <DCCReference Include="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
         <None Include="Source\目录.txt"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
