@@ -25,11 +25,16 @@ uses
   X_DSA.MergeSort,
   X_DSA.RadixSort,
   X_DSA.SortComparer,
+  X_DSA.HeapSort,
   X_DSA.SeqSearch,
   X_DSA.BinarySearch,
   X_DSA.InsertValueSearch,
   X_DSA.FibonacciSearch,
-  X_DSA.HashTableDemo;
+  X_DSA.HashTableDemo,
+  X_DSA.ArrBinaryTreeDemo,
+  X_DSA.ThreadedBinaryTreeDemo,
+  X_DSA.HuffmanTree,
+  X_DSA.HuffmanCode;
 
 begin
   try

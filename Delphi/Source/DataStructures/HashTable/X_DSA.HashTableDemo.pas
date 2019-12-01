@@ -8,7 +8,7 @@ uses
 
 type
 
-  TEmp = class //表示一个雇员
+  TEmp = class // 表示一个雇员
   public
     ID: integer;
     Name: string;
@@ -71,14 +71,14 @@ begin
   ht := THashTable.Create(7);
   key := '';
 
-  WriteLn('add:  添加雇员');
-  WriteLn('list: 显示雇员');
-  WriteLn('find: 查找雇员');
-  WriteLn('exit: 退出系统');
-  readLn(key);
-
   while True do
   begin
+    WriteLn('add:  添加雇员');
+    WriteLn('list: 显示雇员');
+    WriteLn('find: 查找雇员');
+    WriteLn('exit: 退出系统');
+    readLn(key);
+
     mn := TMeun(GetEnumValue(TypeInfo(TMeun), key));
     case mn of
       TMeun.Add:

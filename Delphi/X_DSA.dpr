@@ -1,7 +1,6 @@
 ﻿program X_DSA;
 
 {$APPTYPE CONSOLE}
-
 {$R *.res}
 
 uses
@@ -27,7 +26,12 @@ uses
   X_DSA.BinarySearch in 'Source\DataStructures\Search\X_DSA.BinarySearch.pas',
   X_DSA.InsertValueSearch in 'Source\DataStructures\Search\X_DSA.InsertValueSearch.pas',
   X_DSA.FibonacciSearch in 'Source\DataStructures\Search\X_DSA.FibonacciSearch.pas',
-  X_DSA.HashTableDemo in 'Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas';
+  X_DSA.HashTableDemo in 'Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas',
+  X_DSA.ArrBinaryTreeDemo in 'Source\DataStructures\Tree\X_DSA.ArrBinaryTreeDemo.pas',
+  X_DSA.ThreadedBinaryTreeDemo in 'Source\DataStructures\Tree\X_DSA.ThreadedBinaryTreeDemo.pas',
+  X_DSA.HeapSort in 'Source\DataStructures\Sort\X_DSA.HeapSort.pas',
+  X_DSA.HuffmanTree in 'Source\DataStructures\Tree\X_DSA.HuffmanTree.pas',
+  X_DSA.HuffmanCode in 'Source\DataStructures\Tree\X_DSA.HuffmanCode.pas';
 
 begin
   try
@@ -39,4 +43,5 @@ begin
     on E: Exception do
       Writeln(E.ClassName, ': ', E.Message);
   end;
+
 end.

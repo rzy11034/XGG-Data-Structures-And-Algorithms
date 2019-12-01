@@ -7,7 +7,8 @@ uses
   X_DSA.QuickSort,
   X_DSA.RadixSort,
   X_DSA.MergeSort,
-  X_DSA.Utils;
+  X_DSA.Utils,
+  X_DSA.HeapSort;
 
 procedure Main;
 
@@ -16,9 +17,9 @@ implementation
 procedure Main;
 var
   n, swapTimes: integer;
-  sourceArr, targetArr: TArray<Integer>;
+  sourceArr, targetArr: TArray<integer>;
 begin
-  n := 1000000;
+  n := 1500000;
 
   WriteLn('Test for random array, size = ', n, ', random range [0 .. ', n, ']');
   with TSortTestHelper.Create do
@@ -36,6 +37,9 @@ begin
 
     targetArr := CopyArray(sourceArr);
     TestSort('RadixSort'#9#9, targetArr, @RadixSort);
+
+    targetArr := CopyArray(sourceArr);
+    TestSort('HeapSort'#9#9, targetArr, @HeapSort);
 
     Free;
   end;
@@ -60,6 +64,9 @@ begin
     targetArr := CopyArray(sourceArr);
     TestSort('RadixSort'#9#9, targetArr, @RadixSort);
 
+    targetArr := CopyArray(sourceArr);
+    TestSort('HeapSort'#9#9, targetArr, @HeapSort);
+
     Free;
   end;
 
@@ -81,6 +88,9 @@ begin
 
     targetArr := CopyArray(sourceArr);
     TestSort('RadixSort'#9#9, targetArr, @RadixSort);
+
+    targetArr := CopyArray(sourceArr);
+    TestSort('HeapSort'#9#9, targetArr, @HeapSort);
 
     Free;
   end;

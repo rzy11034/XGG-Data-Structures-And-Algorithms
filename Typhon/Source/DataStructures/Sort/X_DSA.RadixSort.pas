@@ -7,7 +7,7 @@ interface
 uses
   Classes,
   SysUtils,
-  gqueue,
+  Generics.Collections,
   Math;
 
 procedure Main;
@@ -58,18 +58,17 @@ begin
       digitOfElement := arr[j] div n mod 10;
 
       //放入到对应的桶中
-      bucketArr[digitOfElement].Push(arr[j]);
+      bucketArr[digitOfElement].Enqueue(arr[j]);
     end;
 
     //按照桶的顺序, 依次取出数据，放入原来数组
     indexOfArr := 0;
     for j := 0 to Length(bucketArr) - 1 do
     begin
-      while not bucketArr[j].IsEmpty do
+      while bucketArr[j].Count <> 0 do
       begin
-        arr[indexOfArr] := bucketArr[j].Front;
+        arr[indexOfArr] := bucketArr[j].Dequeue;
         Inc(indexOfArr);
-        bucketArr[j].Pop;
       end;
     end;
 

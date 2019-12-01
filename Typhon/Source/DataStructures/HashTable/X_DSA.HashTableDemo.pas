@@ -74,14 +74,14 @@ begin
   ht := THashTable.Create(7);
   key := '';
 
-  WriteLn('add:  添加雇员');
-  WriteLn('list: 显示雇员');
-  WriteLn('find: 查找雇员');
-  WriteLn('exit: 退出系统');
-  readLn(key);
-
   while True do
   begin
+    WriteLn('add:  添加雇员');
+    WriteLn('list: 显示雇员');
+    WriteLn('find: 查找雇员');
+    WriteLn('exit: 退出系统');
+    readLn(key);
+
     mn := TMeun(GetEnumValue(TypeInfo(TMeun), key));
     case mn of
       TMeun.add:
@@ -113,7 +113,7 @@ begin
       end;
 
       else
-        WriteLn('输入错误!');
+        WriteLn('输入错误!'){%H-};
         Break;
     end;
   end;

@@ -1,4 +1,4 @@
-unit X_DSA.SeqSearch;
+﻿unit X_DSA.SeqSearch;
 
 {$mode objfpc}{$H+}
 

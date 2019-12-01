@@ -7,7 +7,7 @@ procedure Run;
 implementation
 
 uses
-  X_DSA.HashTableDemo;
+  X_DSA.HuffmanCode;
 
 procedure Run;
 begin

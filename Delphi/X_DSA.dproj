@@ -173,6 +173,11 @@
         <DCCReference Include="Source\DataStructures\Search\X_DSA.InsertValueSearch.pas"/>
         <DCCReference Include="Source\DataStructures\Search\X_DSA.FibonacciSearch.pas"/>
         <DCCReference Include="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
+        <DCCReference Include="Source\DataStructures\Tree\X_DSA.ArrBinaryTreeDemo.pas"/>
+        <DCCReference Include="Source\DataStructures\Tree\X_DSA.ThreadedBinaryTreeDemo.pas"/>
+        <DCCReference Include="Source\DataStructures\Sort\X_DSA.HeapSort.pas"/>
+        <DCCReference Include="Source\DataStructures\Tree\X_DSA.HuffmanTree.pas"/>
+        <DCCReference Include="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
         <None Include="Source\目录.txt"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
