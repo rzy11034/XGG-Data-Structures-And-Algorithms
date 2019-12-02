@@ -8,7 +8,8 @@ uses
   Classes,
   SysUtils,
   Generics.Defaults,
-  Generics.Collections;
+  Generics.Collections,
+  Math;
 
 type
   TNode = class
@@ -35,6 +36,7 @@ type
     TMap_Chr_Str = specialize THashMap<char, string>;
     TPair_Chr_Int = specialize TPair<char, integer>;
     TPair_Chr_Str = specialize TPair<char, string>;
+
   var
     __root: TNode;
     __codeMap: TMap_Chr_Str;
@@ -45,6 +47,10 @@ type
     /// <summary> 生成赫夫曼树对应的赫夫曼编码 </summary>
     function __getCode(node: TNode; code: string): TMap_Chr_Str;
     procedure __destroyRoot(node: TNode);
+    /// <summary> 二进制转 Byte </summary>
+    function __binToByte(str: string): byte;
+    /// <summary> Byte 转二进制 </summary>
+    function __byteToBin(b: byte): string;
   public
     constructor Create(const str: string);
     destructor Destroy; override;
@@ -76,6 +82,9 @@ begin
   __root := __createHuffmanTree(str);
   __codeMap := TMap_Chr_Str.Create;
   __getCode(__root, '');
+
+  __binToByte('10101000');
+  __byteToBin(168);
 end;
 
 destructor THuffmanCode.Destroy;
@@ -112,7 +121,68 @@ begin
     sb.Append(__codeMap.Items[c]);
   end;
 
-  Writeln(sb.Length);
+  Writeln(sb.Chars[0]);
+  Writeln(sb.);
+end;
+
+function THuffmanCode.__binToByte(str: string): byte;
+type
+  TStackOfChar = specialize TStack<char>;
+var
+  stack: TStackOfChar;
+  tmp: byte;
+  i: integer;
+begin
+  if Length(str) > 8 then
+  begin
+    WriteLn('错误：不是有效8位二进制数。');
+    Exit;
+  end;
+
+  stack := TStackOfChar.Create;
+  try
+    for i := Low(str) to High(str) do
+      stack.Push(str[i]);
+
+    tmp := 0;
+    i := 0;
+    while stack.Count <> 0 do
+    begin
+      tmp := tmp + StrToInt(stack.Pop) * Round(Power(2, i));
+      Inc(i);
+    end;
+
+    Result := tmp;
+  finally
+    stack.Free;
+  end;
+end;
+
+function THuffmanCode.__byteToBin(b: byte): string;
+type
+  TStackOfByte = specialize TStack<byte>;
+var
+  stack: TStackOfByte;
+  ret: string;
+  tmp: byte;
+begin
+  stack := TStackOfByte.Create;
+  try
+    while b > 0 do
+    begin
+      tmp := b mod 2;
+      b := b div 2;
+      stack.Push(tmp);
+    end;
+
+    ret := '';
+    while stack.Count <> 0 do
+      ret := ret + stack.Pop.ToString;
+
+    Result := ret;
+  finally
+    stack.Free;
+  end;
 end;
 
 function THuffmanCode.__createHuffmanTree(const str: string): TNode;
