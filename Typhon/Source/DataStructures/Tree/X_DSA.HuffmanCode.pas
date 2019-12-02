@@ -29,7 +29,7 @@ type
     function ToString: string; override;
   end;
 
-  THuffmanCode = class
+  THuffmanCode = class(TObject)
   private type
     TListOfNode = specialize TList<TNode>;
     TMap_Chr_Int = specialize THashMap<char, integer>;
@@ -40,23 +40,30 @@ type
   var
     __root: TNode;
     __codeMap: TMap_Chr_Str;
+    __huffmanCodes: TBytes;
 
     procedure __preOrder(node: TNode);
     /// <summary> 创建对应的赫夫曼树 </summary>
     function __createHuffmanTree(const str: string): TNode;
     /// <summary> 生成赫夫曼树对应的赫夫曼编码 </summary>
-    function __getCode(node: TNode; code: string): TMap_Chr_Str;
+    procedure __getCode(node: TNode; code: string);
     procedure __destroyRoot(node: TNode);
     /// <summary> 二进制转 Byte </summary>
     function __binToByte(str: string): byte;
     /// <summary> Byte 转二进制 </summary>
     function __byteToBin(b: byte): string;
+    /// <summary> 通过生成的赫夫曼编码表，返回一个赫夫曼编码 压缩后的 TBytes </summary>
+    function __zip(const str: string): TBytes;
+    /// <summary> 通过一个赫夫曼编码压缩后的 TBytes, 返回的赫夫曼字符串 </summary>
+    function __unZip(b: TBytes): string;
   public
+    strZip, strUZip: string;
+
     constructor Create(const str: string);
     destructor Destroy; override;
     procedure PreOrder;
     procedure PrintCode;
-    procedure Zip(const str: string);
+    function ToString: string; override;
   end;
 
 procedure Main;
@@ -70,9 +77,10 @@ var
 begin
   str := 'i like like like java do you like a java';
   hc := THuffmanCode.Create(str);
-  hc.PreOrder;
-  hc.PrintCode;
-  hc.Zip(str);
+  hc.ToString;
+
+  WriteLn(hc.strZip, ' ', Length(hc.strZip));
+  WriteLn(hc.strUZip, ' ', Length(hc.strUZip));
 end;
 
 { THuffmanCode }
@@ -82,9 +90,8 @@ begin
   __root := __createHuffmanTree(str);
   __codeMap := TMap_Chr_Str.Create;
   __getCode(__root, '');
-
-  __binToByte('10101000');
-  __byteToBin(168);
+  __huffmanCodes := __zip(str);
+  __unZip(__huffmanCodes);
 end;
 
 destructor THuffmanCode.Destroy;
@@ -107,22 +114,66 @@ begin
     WriteLn('[', (p.Key), ' code = ', p.Value, ']');
 end;
 
-procedure THuffmanCode.Zip(const str: string);
+function THuffmanCode.ToString: string;
+var
+  i: integer;
+begin
+  Write('[');
+  for i := 0 to Length(__huffmanCodes) - 1 do
+  begin
+    if i <> Length(__huffmanCodes) - 1 then
+      Write(__huffmanCodes[i], ', ')
+    else
+      Write(__huffmanCodes[i]);
+  end;
+  WriteLn(']');
+end;
+
+function THuffmanCode.__zip(const str: string): TBytes;
 var
   arrOfChar: array of char;
   c: char;
   sb: TAnsiStringBuilder;
+  len, i, index: integer;
+  ret: TBytes;
+  tmp: string;
 begin
   arrOfChar := str.ToCharArray;
   sb := TAnsiStringBuilder.Create;
+  try
+    // 1.利用 __codeMap 将 str 转成赫夫曼编码对应的字符串
+    for c in arrOfChar do
+    begin
+      sb.Append(__codeMap.Items[c]);
+    end;
 
-  for c in arrOfChar do
-  begin
-    sb.Append(__codeMap.Items[c]);
+    // 统计返回值得的长度
+    if (sb.Length mod 8) = 0 then
+      len := sb.Length div 8
+    else
+      len := sb.Length div 8 + 1;
+
+    SetLength(ret, len);
+
+    index := 0; // 记录是第几个 byte
+    tmp := '';
+    for i := 1 to sb.Length do
+    begin
+      tmp := tmp + sb.Chars[i - 1];
+
+      if (i mod 8 = 0) or (i = sb.Length) then
+      begin
+        ret[index] := __binToByte(tmp);
+        Inc(index);
+        tmp := '';
+      end;
+    end;
+
+    Result := ret;
+    strZip := sb.ToString;
+  finally
+    sb.Free;
   end;
-
-  Writeln(sb.Chars[0]);
-  Writeln(sb.);
 end;
 
 function THuffmanCode.__binToByte(str: string): byte;
@@ -168,6 +219,7 @@ var
 begin
   stack := TStackOfByte.Create;
   try
+    // 采用 "除2取余，逆序排列" 法
     while b > 0 do
     begin
       tmp := b mod 2;
@@ -241,7 +293,7 @@ begin
   end;
 end;
 
-function THuffmanCode.__getCode(node: TNode; code: string): TMap_Chr_Str;
+procedure THuffmanCode.__getCode(node: TNode; code: string);
 begin
   if node = nil then
     exit;
@@ -266,6 +318,38 @@ begin
   WriteLn(node.ToString, ' ');
   __preOrder(node.Left);
   __preOrder(node.Right);
+end;
+
+function THuffmanCode.__unZip(b: TBytes): string;
+var
+  n, i: integer;
+  sb: TAnsiStringBuilder;
+  tmp: string;
+begin
+  n := Length(b);
+
+  sb := TAnsiStringBuilder.Create;
+  try
+    for i := 0 to n - 1 do
+    begin
+      if i = n - 1 then
+        tmp := __byteToBin(b[i])
+      else
+      begin
+        tmp := __byteToBin(b[i]);
+
+        while Length(tmp) <> 8 do
+          Insert('0', tmp, 0);
+      end;
+
+      sb.Append(tmp);
+    end;
+
+    Result := sb.ToString;
+    strUZip := sb.ToString;
+  finally
+    sb.Free;
+  end;
 end;
 
 procedure THuffmanCode.__destroyRoot(node: TNode);

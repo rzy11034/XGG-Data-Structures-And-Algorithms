@@ -120,19 +120,6 @@ begin
   end;
 end;
 
-function __listInversion(node: TNode): TNode;
-var
-  tmp: TNode;
-begin
-  if node = nil then
-    Exit(nil);
-
-  tmp := node.Next;
-  tmp.Next := node;
-
-  Result.Next := __listInversion(tmp);
-end;
-
 procedure TLinkedListDemo.ListInversion;
 var
   cur, head, tmp: TNode;
