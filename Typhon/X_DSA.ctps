@@ -9,8 +9,8 @@
         <Filename Value="X_DSA.ppr"/>
         <FRMtype Value="0"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="27"/>
-        <CursorPos X="31" Y="44"/>
+        <TopLine Value="21"/>
+        <CursorPos X="50" Y="38"/>
         <UsageCount Value="221"/>
         <Loaded Value="True"/>
       </Unit>
@@ -18,7 +18,7 @@
         <Filename Value="Source\X_DSA.Main.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="2"/>
-        <CursorPos Y="19"/>
+        <CursorPos X="27" Y="16"/>
         <UsageCount Value="221"/>
         <Loaded Value="True"/>
       </Unit>
@@ -80,9 +80,11 @@
       <Unit>
         <Filename Value="Source\DataStructures\Stack\X_DSA.InversePolishCalculator.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="11" Y="11"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="99"/>
+        <CursorPos X="41" Y="113"/>
         <UsageCount Value="200"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Recursion\X_DSA.MiGong.pas"/>
@@ -132,21 +134,21 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="5"/>
         <CursorPos X="24" Y="21"/>
-        <UsageCount Value="184"/>
+        <UsageCount Value="193"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Sort\X_DSA.MergeSort.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="16" Y="28"/>
-        <UsageCount Value="136"/>
+        <UsageCount Value="145"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Sort\X_DSA.RadixSort.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="48" Y="70"/>
-        <UsageCount Value="127"/>
+        <UsageCount Value="136"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Sort\X_DSA.SortComparer.pas"/>
@@ -154,7 +156,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="69"/>
         <CursorPos X="56" Y="83"/>
-        <UsageCount Value="123"/>
+        <UsageCount Value="132"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Search\X_DSA.SeqSearch.pas"/>
@@ -162,7 +164,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="26"/>
         <CursorPos X="9" Y="40"/>
-        <UsageCount Value="121"/>
+        <UsageCount Value="130"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Search\X_DSA.BinarySearch.pas"/>
@@ -170,7 +172,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="35"/>
         <CursorPos X="22" Y="44"/>
-        <UsageCount Value="121"/>
+        <UsageCount Value="130"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Search\X_DSA.InsertValueSearch.pas"/>
@@ -178,7 +180,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="12"/>
         <CursorPos X="94" Y="54"/>
-        <UsageCount Value="115"/>
+        <UsageCount Value="124"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Search\X_DSA.FibonacciSearch.pas"/>
@@ -186,7 +188,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="2"/>
         <CursorPos X="5" Y="73"/>
-        <UsageCount Value="114"/>
+        <UsageCount Value="123"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\HashTable\X_DSA.HashTableDemo.pas"/>
@@ -194,46 +196,61 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="163"/>
         <CursorPos X="26" Y="229"/>
-        <UsageCount Value="111"/>
+        <UsageCount Value="120"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Tree\X_DSA.ArrBinaryTreeDemo.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="30" Y="23"/>
-        <UsageCount Value="85"/>
+        <UsageCount Value="94"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Tree\X_DSA.ThreadedBinaryTreeDemo.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="91"/>
+        <TopLine Value="124"/>
         <CursorPos Y="109"/>
-        <UsageCount Value="84"/>
+        <UsageCount Value="93"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Sort\X_DSA.HeapSort.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="56" Y="34"/>
-        <UsageCount Value="76"/>
+        <UsageCount Value="85"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanTree.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="52"/>
         <CursorPos X="13" Y="73"/>
-        <UsageCount Value="70"/>
+        <UsageCount Value="79"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
         <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="350"/>
+        <CursorPos X="19" Y="377"/>
+        <UsageCount Value="78"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTreeDemo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="16"/>
+        <CursorPos Y="33"/>
+        <UsageCount Value="28"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTree.pas"/>
+        <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="106"/>
-        <CursorPos X="11" Y="114"/>
-        <UsageCount Value="69"/>
+        <CursorPos X="39" Y="112"/>
+        <UsageCount Value="27"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -241,74 +258,74 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="69"/>
         <CursorPos X="35" Y="52"/>
-        <UsageCount Value="49"/>
+        <UsageCount Value="48"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Code_Implementation\X_DSA.LinkedList.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="27"/>
         <CursorPos X="25" Y="46"/>
-        <UsageCount Value="48"/>
+        <UsageCount Value="47"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Code_Implementation\X_DSA.DoubleLinkedList.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="82"/>
         <CursorPos X="3" Y="87"/>
-        <UsageCount Value="42"/>
+        <UsageCount Value="41"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Code_Implementation\X_DSA.CircularLinkedList.pas"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="12" Y="9"/>
-        <UsageCount Value="37"/>
+        <UsageCount Value="36"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Code_Implementation\X_DSA.InversePolishCalculator.pas"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="24" Y="386"/>
-        <UsageCount Value="33"/>
+        <UsageCount Value="32"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Code_Implementation\X_DSA.MiGong.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="18"/>
         <CursorPos X="55" Y="91"/>
-        <UsageCount Value="3"/>
+        <UsageCount Value="2"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Code_Implementation\X_DSA.Queen8.pas"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="42" Y="83"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Data_Structures\X_DSA.LinkedList.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="157"/>
         <CursorPos X="45" Y="327"/>
-        <UsageCount Value="6"/>
+        <UsageCount Value="5"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Data_Structures\X_DSA.C009_SparseArrayCodeImplementation.pas"/>
         <EditorIndex Value="-1"/>
         <CursorPos Y="34"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\fcl-stl\src\garrayutils.pp"/>
         <FRMtype Value="0"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\rtl-generics\src\generics.collections.pas"/>
         <FRMtype Value="0"/>
         <UnitName Value="Generics.Collections"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="2161"/>
-        <CursorPos X="3" Y="2173"/>
-        <UsageCount Value="10"/>
+        <TopLine Value="1198"/>
+        <CursorPos X="37" Y="1178"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\fcl-base\src\contnrs.pp"/>
@@ -316,15 +333,15 @@
         <UnitName Value="Contnrs"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="151"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\fcl-stl\src\gvector.pp"/>
         <FRMtype Value="0"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="87"/>
-        <CursorPos X="22" Y="101"/>
-        <UsageCount Value="9"/>
+        <CursorPos X="22" Y="100"/>
+        <UsageCount Value="10"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\fcl-stl\src\gqueue.pp"/>
@@ -332,7 +349,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="37"/>
         <CursorPos X="13" Y="57"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\rtl\objpas\math.pp"/>
@@ -341,14 +358,14 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="477"/>
         <CursorPos X="10" Y="494"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\fcl-stl\src\gdeque.pp"/>
         <FRMtype Value="0"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="59" Y="10"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\rtl\objpas\sysutils\syshelph.inc"/>
@@ -356,7 +373,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="456"/>
         <CursorPos X="21" Y="468"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="..\..\Data-Structures-and-Algorithms\Typhon\Source\DSA.Utils.pas"/>
@@ -364,7 +381,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="286"/>
         <CursorPos X="24" Y="307"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\rtl\objpas\objpas.pp"/>
@@ -372,28 +389,28 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="34"/>
         <CursorPos X="8" Y="48"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\fcl-stl\src\ghashmap.pp"/>
         <FRMtype Value="0"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="371"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="..\..\Data-Structures-and-Algorithms\Typhon\Source\Tree\DSA.Tree.BST.pas"/>
         <FRMtype Value="0"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="6" Y="10"/>
-        <UsageCount Value="7"/>
+        <UsageCount Value="6"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\rtl-generics\src\generics.helpers.pas"/>
         <FRMtype Value="0"/>
         <UnitName Value="Generics.Helpers"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="2"/>
+        <UsageCount Value="1"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\rtl-generics\src\generics.strings.pas"/>
@@ -401,7 +418,7 @@
         <UnitName Value="Generics.Strings"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="7"/>
-        <UsageCount Value="2"/>
+        <UsageCount Value="1"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\rtl-generics\src\generics.defaults.pas"/>
@@ -410,21 +427,21 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="31"/>
         <CursorPos X="12" Y="52"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit>
       <Unit>
         <Filename Value="..\..\Data-Structures-and-Algorithms\Delphi\Source\Tree\DSA.Tree.BST.pas"/>
         <FRMtype Value="0"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="3" Y="13"/>
-        <UsageCount Value="3"/>
+        <UsageCount Value="2"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\fcl-stl\src\gpriorityqueue.pp"/>
         <FRMtype Value="0"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="15" Y="19"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\rtl-generics\src\inc\generics.dictionariesh.inc"/>
@@ -432,7 +449,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="32"/>
         <CursorPos X="42" Y="50"/>
-        <UsageCount Value="7"/>
+        <UsageCount Value="6"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\rtl\inc\objpash.inc"/>
@@ -440,130 +457,126 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="234"/>
         <CursorPos X="20" Y="256"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit>
     </Units>
-    <JumpHistory Count="30" HistoryIndex="29">
+    <JumpHistory Count="29" HistoryIndex="28">
       <Position1>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="215" TopLine="201"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTreeDemo.pas"/>
+        <Caret Line="37" TopLine="19"/>
       </Position1>
       <Position2>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="216" TopLine="201"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTreeDemo.pas"/>
+        <Caret Line="38" TopLine="19"/>
       </Position2>
       <Position3>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="213" TopLine="201"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTreeDemo.pas"/>
+        <Caret Line="31" TopLine="19"/>
       </Position3>
       <Position4>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="215" TopLine="201"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTreeDemo.pas"/>
+        <Caret Line="33" TopLine="19"/>
       </Position4>
       <Position5>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="216" TopLine="201"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTreeDemo.pas"/>
+        <Caret Line="34" TopLine="19"/>
       </Position5>
       <Position6>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="213" TopLine="201"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTree.pas"/>
+        <Caret Line="180" TopLine="168"/>
       </Position6>
       <Position7>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="215" TopLine="201"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTreeDemo.pas"/>
+        <Caret Line="33" TopLine="19"/>
       </Position7>
       <Position8>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="216" TopLine="201"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTreeDemo.pas"/>
+        <Caret Line="34" TopLine="19"/>
       </Position8>
       <Position9>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="213" TopLine="201"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTreeDemo.pas"/>
+        <Caret Line="35" TopLine="19"/>
       </Position9>
       <Position10>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="215" TopLine="201"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTreeDemo.pas"/>
+        <Caret Line="36" TopLine="19"/>
       </Position10>
       <Position11>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="216" TopLine="201"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTreeDemo.pas"/>
+        <Caret Line="37" TopLine="19"/>
       </Position11>
       <Position12>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="213" TopLine="201"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTreeDemo.pas"/>
+        <Caret Line="38" TopLine="19"/>
       </Position12>
       <Position13>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="215" TopLine="201"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTreeDemo.pas"/>
+        <Caret Line="31" TopLine="19"/>
       </Position13>
       <Position14>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="216" TopLine="201"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTreeDemo.pas"/>
+        <Caret Line="33" TopLine="19"/>
       </Position14>
       <Position15>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="213" TopLine="201"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTreeDemo.pas"/>
+        <Caret Line="34" TopLine="19"/>
       </Position15>
       <Position16>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="215" TopLine="201"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTreeDemo.pas"/>
+        <Caret Line="33" TopLine="22"/>
       </Position16>
       <Position17>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="216" TopLine="201"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTreeDemo.pas"/>
+        <Caret Line="34" TopLine="22"/>
       </Position17>
       <Position18>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="213" TopLine="201"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTreeDemo.pas"/>
+        <Caret Line="35" TopLine="22"/>
       </Position18>
       <Position19>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="215" TopLine="201"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTreeDemo.pas"/>
+        <Caret Line="36" TopLine="22"/>
       </Position19>
       <Position20>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="216" TopLine="201"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTreeDemo.pas"/>
+        <Caret Line="31" TopLine="22"/>
       </Position20>
       <Position21>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="213" TopLine="201"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTreeDemo.pas"/>
+        <Caret Line="33" TopLine="22"/>
       </Position21>
       <Position22>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="219" TopLine="210"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTreeDemo.pas"/>
+        <Caret Line="34" TopLine="22"/>
       </Position22>
       <Position23>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="221" Column="16" TopLine="210"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTree.pas"/>
+        <Caret Line="128" Column="22" TopLine="111"/>
       </Position23>
       <Position24>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="219" Column="19" TopLine="185"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTree.pas"/>
+        <Caret Line="26" Column="14" TopLine="9"/>
       </Position24>
       <Position25>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="68" Column="20" TopLine="49"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTree.pas"/>
+        <Caret Line="37" Column="18" TopLine="9"/>
       </Position25>
       <Position26>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="72" Column="65" TopLine="70"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTree.pas"/>
+        <Caret Line="60" TopLine="47"/>
       </Position26>
       <Position27>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="85" Column="12" TopLine="71"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTree.pas"/>
+        <Caret Line="26" TopLine="9"/>
       </Position27>
       <Position28>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="68" Column="15" TopLine="55"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTree.pas"/>
+        <Caret Line="64" Column="40" TopLine="45"/>
       </Position28>
       <Position29>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="85" Column="13" TopLine="64"/>
+        <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTreeDemo.pas"/>
+        <Caret Line="33"/>
       </Position29>
-      <Position30>
-        <Filename Value="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
-        <Caret Line="72" Column="11" TopLine="64"/>
-      </Position30>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

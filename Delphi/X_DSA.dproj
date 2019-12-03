@@ -178,6 +178,8 @@
         <DCCReference Include="Source\DataStructures\Sort\X_DSA.HeapSort.pas"/>
         <DCCReference Include="Source\DataStructures\Tree\X_DSA.HuffmanTree.pas"/>
         <DCCReference Include="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
+        <DCCReference Include="Source\DataStructures\Tree\X_DSA.BinarySortTreeDemo.pas"/>
+        <DCCReference Include="Source\DataStructures\Tree\X_DSA.BinarySortTree.pas"/>
         <None Include="Source\目录.txt"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>

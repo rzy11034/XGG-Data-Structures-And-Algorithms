@@ -11,7 +11,7 @@ procedure Run;
 implementation
 
 uses
-  X_DSA.HuffmanCode;
+  X_DSA.BinarySortTreeDemo;
 
 procedure Run;
 begin

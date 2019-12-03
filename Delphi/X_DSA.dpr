@@ -31,7 +31,9 @@ uses
   X_DSA.ThreadedBinaryTreeDemo in 'Source\DataStructures\Tree\X_DSA.ThreadedBinaryTreeDemo.pas',
   X_DSA.HeapSort in 'Source\DataStructures\Sort\X_DSA.HeapSort.pas',
   X_DSA.HuffmanTree in 'Source\DataStructures\Tree\X_DSA.HuffmanTree.pas',
-  X_DSA.HuffmanCode in 'Source\DataStructures\Tree\X_DSA.HuffmanCode.pas';
+  X_DSA.HuffmanCode in 'Source\DataStructures\Tree\X_DSA.HuffmanCode.pas',
+  X_DSA.BinarySortTreeDemo in 'Source\DataStructures\Tree\X_DSA.BinarySortTreeDemo.pas',
+  X_DSA.BinarySortTree in 'Source\DataStructures\Tree\X_DSA.BinarySortTree.pas';
 
 begin
   try
