@@ -13,8 +13,10 @@ uses
 
 type
   TNode = class
-  public type
+  public
+    type
     TCmp = specialize TComparer<TNode>;
+
     TComparer = class(TCmp)
       function Compare(constref Left, Right: TNode): integer; override;
     end;
@@ -30,7 +32,8 @@ type
   end;
 
   THuffmanCode = class(TObject)
-  private type
+  private
+    type
     TListOfNode = specialize TList<TNode>;
     TMap_Chr_Int = specialize THashMap<char, integer>;
     TMap_Chr_Str = specialize THashMap<char, string>;
@@ -75,9 +78,11 @@ var
   str: string;
   hc: THuffmanCode;
 begin
-  str := 'i like like like java do you like a java';
+  //str := 'i like like like java do you like a java';
+  str := 'aaabcdefgh';
   hc := THuffmanCode.Create(str);
-  hc.ToString;
+  WriteLn(hc.ToString);
+  hc.PrintCode;
 
   WriteLn(hc.strZip, ' ', Length(hc.strZip));
   WriteLn(hc.strUZip, ' ', Length(hc.strUZip));
@@ -111,22 +116,30 @@ var
   p: TPair_Chr_Str;
 begin
   for p in __codeMap.ToArray do
-    WriteLn('[', (p.Key), ' code = ', p.Value, ']');
+    WriteLn('[', (p.Key), ' = ', p.Value, ']');
 end;
 
 function THuffmanCode.ToString: string;
 var
   i: integer;
+  sb: TAnsiStringBuilder;
 begin
-  Write('[');
-  for i := 0 to Length(__huffmanCodes) - 1 do
-  begin
-    if i <> Length(__huffmanCodes) - 1 then
-      Write(__huffmanCodes[i], ', ')
-    else
-      Write(__huffmanCodes[i]);
+  sb := TAnsiStringBuilder.Create;
+  try
+    sb.Append('[');
+    for i := 0 to Length(__huffmanCodes) - 1 do
+    begin
+      if i <> Length(__huffmanCodes) - 1 then
+        sb.Append(__huffmanCodes[i]).Append(', ')
+      else
+        sb.Append(__huffmanCodes[i]);
+    end;
+    sb.Append(']'#10);
+
+    Result := sb.ToString;
+  finally
+    sb.Free;
   end;
-  WriteLn(']');
 end;
 
 function THuffmanCode.__zip(const str: string): TBytes;
@@ -205,7 +218,7 @@ begin
 
     Result := tmp;
   finally
-    stack.Free;
+    stack.Clear;
   end;
 end;
 

@@ -61,7 +61,7 @@ type
     destructor Destroy; override;
     procedure PreOrder;
     procedure PrintCode;
-
+    function ToString: string; override;
   end;
 
 procedure Main;
@@ -73,11 +73,14 @@ var
   str: string;
   hc: THuffmanCode;
 begin
-  str := 'i like like like java do you like a java';
+//  str := 'i like like like java do you like a java';
+  str := 'abcdefg';
   hc := THuffmanCode.Create(str);
-  //str := hc.__unZip([207, 238, 47, 238, 47, 238, 44, 232, 214, 32, 200, 32, 254, 226, 214, 116, 13]);
-  WriteLn(hc.strZip);
-  WriteLn(hc.strUZip);
+  WriteLn(hc.ToString);
+  hc.PrintCode;
+
+  WriteLn(hc.strZip, ' ', Length(hc.strZip));
+  WriteLn(hc.strUZip, ' ', Length(hc.strUZip));
 end;
 
 { TNode.TComparer }
@@ -139,7 +142,30 @@ var
   p: TPair_Chr_Str;
 begin
   for p in __codeMap.ToArray do
-    WriteLn('[', (p.Key), ' code = ', p.Value, ']');
+    WriteLn('[', (p.Key), ' = ', p.Value, ']');
+end;
+
+function THuffmanCode.ToString: string;
+var
+  i: integer;
+  sb: TStringBuilder;
+begin
+  sb := TStringBuilder.Create;
+  try
+    sb.Append('[');
+    for i := 0 to Length(__huffmanCodes) - 1 do
+    begin
+      if i <> Length(__huffmanCodes) - 1 then
+        sb.Append(__huffmanCodes[i]).Append(', ')
+      else
+        sb.Append(__huffmanCodes[i]);
+    end;
+    sb.Append(']'#10);
+
+    Result := sb.ToString;
+  finally
+    sb.Free;
+  end;
 end;
 
 function THuffmanCode.__zip(const str: string): TBytes;
