@@ -180,6 +180,9 @@
         <DCCReference Include="Source\DataStructures\Tree\X_DSA.HuffmanCode.pas"/>
         <DCCReference Include="Source\DataStructures\Tree\X_DSA.BinarySortTreeDemo.pas"/>
         <DCCReference Include="Source\DataStructures\Tree\X_DSA.BinarySortTree.pas"/>
+        <DCCReference Include="Source\DataStructures\Graph\X_DSA.Graph.pas"/>
+        <DCCReference Include="Source\DataStructures\Graph\X_DSA.GraphDemo.pas"/>
+        <DCCReference Include="Source\Algorithm\BinarySearchNoRecur\X_DSA.BinarySearchNoRecur.pas"/>
         <None Include="Source\目录.txt"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>

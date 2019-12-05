@@ -8,6 +8,7 @@
         <MainUnitHasCreateFormStatements Value="False"/>
         <MainUnitHasTitleStatement Value="False"/>
         <MainUnitHasScaledStatement Value="False"/>
+        <AlwaysBuild Value="True"/>
       </Flags>
       <SessionStorage Value="InProjectDir"/>
       <Title Value="X_DSA"/>
@@ -22,7 +23,7 @@
           <PathDelim Value="\"/>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value="Source;Source\DataStructures\Stack;Source\DataStructures\SparseArray;Source\DataStructures\LinkedList;Source\DataStructures\Recursion;Source\DataStructures\Sort;Source\DataStructures\Search;Source\DataStructures\HashTable;Source\DataStructures\Tree"/>
+            <OtherUnitFiles Value="Source;Source\DataStructures\Stack;Source\DataStructures\SparseArray;Source\DataStructures\LinkedList;Source\DataStructures\Recursion;Source\DataStructures\Sort;Source\DataStructures\Search;Source\DataStructures\HashTable;Source\DataStructures\Tree;Source\DataStructures\Graph;Source\Algorithm\BinarySearchNoRecur"/>
             <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <Parsing>
@@ -38,10 +39,13 @@
               <StackChecks Value="True"/>
             </Checks>
             <VerifyObjMethodCallValidity Value="True"/>
+            <Optimizations>
+              <OptimizationLevel Value="0"/>
+            </Optimizations>
           </CodeGeneration>
           <Linking>
             <Debugging>
-              <DebugInfoType Value="dsDwarf2Set"/>
+              <DebugInfoType Value="dsDwarf2"/>
               <UseHeaptrc Value="True"/>
               <TrashVariables Value="True"/>
             </Debugging>
@@ -54,7 +58,7 @@
           <PathDelim Value="\"/>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value="Source;Source\DataStructures\Stack;Source\DataStructures\SparseArray;Source\DataStructures\LinkedList;Source\DataStructures\Recursion;Source\DataStructures\Sort;Source\DataStructures\Search;Source\DataStructures\HashTable;Source\DataStructures\Tree"/>
+            <OtherUnitFiles Value="Source;Source\DataStructures\Stack;Source\DataStructures\SparseArray;Source\DataStructures\LinkedList;Source\DataStructures\Recursion;Source\DataStructures\Sort;Source\DataStructures\Search;Source\DataStructures\HashTable;Source\DataStructures\Tree;Source\DataStructures\Graph;Source\Algorithm\BinarySearchNoRecur"/>
             <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <CodeGeneration>
@@ -207,6 +211,18 @@
         <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTree.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="Source\DataStructures\Graph\X_DSA.Graph.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\DataStructures\Graph\X_DSA.GraphDemo.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Algorithm\BinarySearchNoRecur\X_DSA.BinarySearchNoRecur.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -214,7 +230,7 @@
     <PathDelim Value="\"/>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="Source;Source\DataStructures\Stack;Source\DataStructures\SparseArray;Source\DataStructures\LinkedList;Source\DataStructures\Recursion;Source\DataStructures\Sort;Source\DataStructures\Search;Source\DataStructures\HashTable;Source\DataStructures\Tree"/>
+      <OtherUnitFiles Value="Source;Source\DataStructures\Stack;Source\DataStructures\SparseArray;Source\DataStructures\LinkedList;Source\DataStructures\Recursion;Source\DataStructures\Sort;Source\DataStructures\Search;Source\DataStructures\HashTable;Source\DataStructures\Tree;Source\DataStructures\Graph;Source\Algorithm\BinarySearchNoRecur"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
   </CompilerOptions>

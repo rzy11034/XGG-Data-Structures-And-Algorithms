@@ -1,7 +1,6 @@
 ﻿unit X_DSA.SparseArray;
 
 {$mode objfpc}{$H+}
-{$ModeSwitch advancedrecords}
 
 interface
 

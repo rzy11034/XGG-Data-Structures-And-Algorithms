@@ -10,6 +10,7 @@ uses
   SysUtils,
   X_DSA.Main,
   X_DSA.Utils,
+  X_DSA.BinarySearchNoRecur,
   X_DSA.CircularLinkedList,
   X_DSA.DoubleLinkedList,
   X_DSA.LinkedList,
@@ -35,7 +36,10 @@ uses
   X_DSA.ThreadedBinaryTreeDemo,
   X_DSA.HuffmanTree,
   X_DSA.HuffmanCode,
-  X_DSA.BinarySortTreeDemo, X_DSA.BinarySortTree;
+  X_DSA.BinarySortTreeDemo,
+  X_DSA.BinarySortTree,
+  X_DSA.Graph,
+  X_DSA.GraphDemo;
 
 begin
   try

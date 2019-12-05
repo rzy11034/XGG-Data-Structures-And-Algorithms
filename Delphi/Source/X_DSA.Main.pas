@@ -11,7 +11,7 @@ procedure Run;
 implementation
 
 uses
-  X_DSA.BinarySortTreeDemo;
+  X_DSA.BinarySearchNoRecur;
 
 procedure Run;
 begin

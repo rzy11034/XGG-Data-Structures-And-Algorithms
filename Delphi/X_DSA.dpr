@@ -33,7 +33,10 @@ uses
   X_DSA.HuffmanTree in 'Source\DataStructures\Tree\X_DSA.HuffmanTree.pas',
   X_DSA.HuffmanCode in 'Source\DataStructures\Tree\X_DSA.HuffmanCode.pas',
   X_DSA.BinarySortTreeDemo in 'Source\DataStructures\Tree\X_DSA.BinarySortTreeDemo.pas',
-  X_DSA.BinarySortTree in 'Source\DataStructures\Tree\X_DSA.BinarySortTree.pas';
+  X_DSA.BinarySortTree in 'Source\DataStructures\Tree\X_DSA.BinarySortTree.pas',
+  X_DSA.Graph in 'Source\DataStructures\Graph\X_DSA.Graph.pas',
+  X_DSA.GraphDemo in 'Source\DataStructures\Graph\X_DSA.GraphDemo.pas',
+  X_DSA.BinarySearchNoRecur in 'Source\Algorithm\BinarySearchNoRecur\X_DSA.BinarySearchNoRecur.pas';
 
 begin
   try

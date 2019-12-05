@@ -24,10 +24,10 @@ type
 
     function __add(node: TNode; val: integer): TNode;
     function __del(node: TNode; val: integer): TNode;
+    function __delMin(node: TNode): TNode;
+    function __minNode(node: TNode): TNode;
     procedure __destroyRoot(node: TNode);
     procedure __infixOrder(node: TNode);
-    function __minNode(node: TNode): TNode;
-    function __delMin(node: TNode): TNode;
 
   public
     constructor Create;
