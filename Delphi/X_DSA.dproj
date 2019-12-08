@@ -182,7 +182,10 @@
         <DCCReference Include="Source\DataStructures\Tree\X_DSA.BinarySortTree.pas"/>
         <DCCReference Include="Source\DataStructures\Graph\X_DSA.Graph.pas"/>
         <DCCReference Include="Source\DataStructures\Graph\X_DSA.GraphDemo.pas"/>
-        <DCCReference Include="Source\Algorithm\BinarySearchNoRecur\X_DSA.BinarySearchNoRecur.pas"/>
+        <DCCReference Include="Source\Algorithm\X_DSA.BinarySearchNoRecur.pas"/>
+        <DCCReference Include="Source\Algorithm\X_DSA.HanoiTower.pas"/>
+        <DCCReference Include="Source\Algorithm\X_DSA.KnapsackProblem.pas"/>
+        <DCCReference Include="Source\Algorithm\X_DSA.ViolenceMatch.pas"/>
         <None Include="Source\目录.txt"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>

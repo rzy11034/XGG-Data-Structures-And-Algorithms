@@ -36,7 +36,10 @@ uses
   X_DSA.BinarySortTree in 'Source\DataStructures\Tree\X_DSA.BinarySortTree.pas',
   X_DSA.Graph in 'Source\DataStructures\Graph\X_DSA.Graph.pas',
   X_DSA.GraphDemo in 'Source\DataStructures\Graph\X_DSA.GraphDemo.pas',
-  X_DSA.BinarySearchNoRecur in 'Source\Algorithm\BinarySearchNoRecur\X_DSA.BinarySearchNoRecur.pas';
+  X_DSA.BinarySearchNoRecur in 'Source\Algorithm\X_DSA.BinarySearchNoRecur.pas',
+  X_DSA.HanoiTower in 'Source\Algorithm\X_DSA.HanoiTower.pas',
+  X_DSA.KnapsackProblem in 'Source\Algorithm\X_DSA.KnapsackProblem.pas',
+  X_DSA.ViolenceMatch in 'Source\Algorithm\X_DSA.ViolenceMatch.pas';
 
 begin
   try

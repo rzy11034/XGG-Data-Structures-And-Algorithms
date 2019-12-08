@@ -23,7 +23,7 @@
           <PathDelim Value="\"/>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value="Source;Source\DataStructures\Stack;Source\DataStructures\SparseArray;Source\DataStructures\LinkedList;Source\DataStructures\Recursion;Source\DataStructures\Sort;Source\DataStructures\Search;Source\DataStructures\HashTable;Source\DataStructures\Tree;Source\DataStructures\Graph;Source\Algorithm\BinarySearchNoRecur"/>
+            <OtherUnitFiles Value="Source;Source\DataStructures\Stack;Source\DataStructures\SparseArray;Source\DataStructures\LinkedList;Source\DataStructures\Recursion;Source\DataStructures\Sort;Source\DataStructures\Search;Source\DataStructures\HashTable;Source\DataStructures\Tree;Source\DataStructures\Graph;Source\Algorithm"/>
             <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <Parsing>
@@ -58,7 +58,7 @@
           <PathDelim Value="\"/>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value="Source;Source\DataStructures\Stack;Source\DataStructures\SparseArray;Source\DataStructures\LinkedList;Source\DataStructures\Recursion;Source\DataStructures\Sort;Source\DataStructures\Search;Source\DataStructures\HashTable;Source\DataStructures\Tree;Source\DataStructures\Graph;Source\Algorithm\BinarySearchNoRecur"/>
+            <OtherUnitFiles Value="Source;Source\DataStructures\Stack;Source\DataStructures\SparseArray;Source\DataStructures\LinkedList;Source\DataStructures\Recursion;Source\DataStructures\Sort;Source\DataStructures\Search;Source\DataStructures\HashTable;Source\DataStructures\Tree;Source\DataStructures\Graph;Source\Algorithm"/>
             <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <CodeGeneration>
@@ -220,7 +220,19 @@
         <IsPartOfProject Value="True"/>
       </Unit>
       <Unit>
-        <Filename Value="Source\Algorithm\BinarySearchNoRecur\X_DSA.BinarySearchNoRecur.pas"/>
+        <Filename Value="Source\Algorithm\X_DSA.BinarySearchNoRecur.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Algorithm\X_DSA.HanoiTower.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Algorithm\X_DSA.KnapsackProblem.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Algorithm\X_DSA.ViolenceMatch.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
     </Units>
@@ -230,7 +242,7 @@
     <PathDelim Value="\"/>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="Source;Source\DataStructures\Stack;Source\DataStructures\SparseArray;Source\DataStructures\LinkedList;Source\DataStructures\Recursion;Source\DataStructures\Sort;Source\DataStructures\Search;Source\DataStructures\HashTable;Source\DataStructures\Tree;Source\DataStructures\Graph;Source\Algorithm\BinarySearchNoRecur"/>
+      <OtherUnitFiles Value="Source;Source\DataStructures\Stack;Source\DataStructures\SparseArray;Source\DataStructures\LinkedList;Source\DataStructures\Recursion;Source\DataStructures\Sort;Source\DataStructures\Search;Source\DataStructures\HashTable;Source\DataStructures\Tree;Source\DataStructures\Graph;Source\Algorithm\BinarySearchNoRecur;Source\Algorithm"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
   </CompilerOptions>

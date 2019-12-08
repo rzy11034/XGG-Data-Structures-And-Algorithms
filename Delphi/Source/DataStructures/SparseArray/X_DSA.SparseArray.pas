@@ -28,7 +28,6 @@ var
   i: integer;
   j: integer;
   sa: TSparseArray;
-  c:char;
 begin
   SetLength(chess, 11, 11);
 
