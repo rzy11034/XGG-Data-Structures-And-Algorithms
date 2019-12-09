@@ -235,6 +235,10 @@
         <Filename Value="Source\Algorithm\X_DSA.ViolenceMatch.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="Source\Algorithm\X_DSA.KMPAlgorithm.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

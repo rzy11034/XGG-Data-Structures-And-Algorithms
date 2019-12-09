@@ -14,6 +14,7 @@ uses
   X_DSA.HanoiTower,
   X_DSA.KnapsackProblem,
   X_DSA.ViolenceMatch,
+  X_DSA.KMPAlgorithm,
   X_DSA.CircularLinkedList,
   X_DSA.DoubleLinkedList,
   X_DSA.LinkedList,

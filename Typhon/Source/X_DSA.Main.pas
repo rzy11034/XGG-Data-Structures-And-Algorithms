@@ -13,7 +13,7 @@ procedure Run;
 implementation
 
 uses
-  X_DSA.ViolenceMatch;
+  X_DSA.KMPAlgorithm;
 
 procedure Run;
 begin

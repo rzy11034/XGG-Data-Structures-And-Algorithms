@@ -186,6 +186,7 @@
         <DCCReference Include="Source\Algorithm\X_DSA.HanoiTower.pas"/>
         <DCCReference Include="Source\Algorithm\X_DSA.KnapsackProblem.pas"/>
         <DCCReference Include="Source\Algorithm\X_DSA.ViolenceMatch.pas"/>
+        <DCCReference Include="Source\Algorithm\X_DSA.KMPAlgorithm.pas"/>
         <None Include="Source\目录.txt"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
