@@ -85,7 +85,7 @@ begin
   j := 0;
   for i := 1 to str.Length - 1 do
   begin
-    // 当 dest.charAt(i) != dest.charAt(j) ，我们需要从 next[j-1] 获取新的 j
+    // 当 dest.charAt(i) <> dest.charAt(j) ，我们需要从 next[j-1] 获取新的 j
     // 直到我们发现有 dest.charAt(i) = dest.charAt(j) 成立才退出
     // 这是 kmp 算法的核心点
     while (j > 0) and (str.Chars[i] <> str.Chars[j]) do

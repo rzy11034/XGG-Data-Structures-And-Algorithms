@@ -14,7 +14,7 @@ uses
   X_DSA.HanoiTower,
   X_DSA.KnapsackProblem,
   X_DSA.ViolenceMatch,
-  X_DSA.KMPAlgorithm,
+  X_DSA.KMPAlgorithm, X_DSA.GreedyAlgorithm,
   X_DSA.CircularLinkedList,
   X_DSA.DoubleLinkedList,
   X_DSA.LinkedList,
@@ -43,7 +43,7 @@ uses
   X_DSA.BinarySortTreeDemo,
   X_DSA.BinarySortTree,
   X_DSA.Graph,
-  X_DSA.GraphDemo, unit1;
+  X_DSA.GraphDemo;
 
 begin
   try
