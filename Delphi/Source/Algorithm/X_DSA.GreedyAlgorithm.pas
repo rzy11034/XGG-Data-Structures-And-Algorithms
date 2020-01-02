@@ -1,19 +1,14 @@
 ﻿unit X_DSA.GreedyAlgorithm;
 
-{$mode objfpc}{$H+}
-
 interface
 
 uses
-  Classes,
-  SysUtils,
-  Generics.Collections;
+  System.Generics.Collections;
 
 type
-  THashSets = specialize THashMap<UnicodeString, TObject>;
-  TBroadcasts = specialize THashMap<UnicodeString, THashSets>;
-  TListOfStr = specialize TList<UnicodeString>;
-
+  THashSets = TDictionary<string, TObject>;
+  TBroadcasts = TDictionary<string, THashSets>;
+  TListOfStr = TList<string>;
 
 procedure Main;
 
@@ -44,7 +39,6 @@ begin
   set3.Add('上海', nil);
   set3.Add('杭州', nil);
 
-
   set4 := THashSets.Create;
   set4.Add('上海', nil);
   set4.Add('天津', nil);
@@ -52,7 +46,7 @@ begin
   set5 := THashSets.Create;
   set5.Add('杭州', nil);
   set5.Add('大连', nil);
-  //------------------------------------------------------------
+  // ------------------------------------------------------------
 
   // 将各个电台放入到broadcasts
   broadcasts := TBroadcasts.Create;
@@ -86,7 +80,7 @@ begin
     // 如果 maxKey 不为 nil , 则会加入到 selects
     maxKey := '';
 
-    //遍历 broadcasts, 取出对应 key
+    // 遍历 broadcasts, 取出对应 key
     for key in broadcasts.Keys do
     begin
       tempSet.Clear;

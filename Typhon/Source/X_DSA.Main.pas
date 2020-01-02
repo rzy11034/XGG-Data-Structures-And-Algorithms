@@ -13,7 +13,7 @@ procedure Run;
 implementation
 
 uses
-  X_DSA.KMPAlgorithm;
+  X_DSA.GreedyAlgorithm;
 
 procedure Run;
 begin

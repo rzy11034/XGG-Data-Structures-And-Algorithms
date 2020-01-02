@@ -18,7 +18,7 @@
         <Filename Value="Source\X_DSA.Main.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="2"/>
-        <CursorPos X="24" Y="18"/>
+        <CursorPos X="24" Y="16"/>
         <UsageCount Value="221"/>
         <Loaded Value="True"/>
       </Unit>
@@ -241,7 +241,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="16"/>
         <CursorPos Y="33"/>
-        <UsageCount Value="158"/>
+        <UsageCount Value="167"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTree.pas"/>
@@ -249,7 +249,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="82"/>
         <CursorPos X="8" Y="99"/>
-        <UsageCount Value="157"/>
+        <UsageCount Value="166"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Graph\X_DSA.Graph.pas"/>
@@ -257,7 +257,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="13"/>
         <CursorPos X="5" Y="30"/>
-        <UsageCount Value="147"/>
+        <UsageCount Value="156"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Graph\X_DSA.GraphDemo.pas"/>
@@ -265,7 +265,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="23"/>
         <CursorPos X="27" Y="42"/>
-        <UsageCount Value="144"/>
+        <UsageCount Value="153"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.BinarySearchNoRecur.pas"/>
@@ -273,7 +273,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="22"/>
         <CursorPos X="36" Y="39"/>
-        <UsageCount Value="133"/>
+        <UsageCount Value="142"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.HanoiTower.pas"/>
@@ -281,7 +281,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="11"/>
         <CursorPos X="6" Y="39"/>
-        <UsageCount Value="131"/>
+        <UsageCount Value="140"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.KnapsackProblem.pas"/>
@@ -289,7 +289,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="57"/>
         <CursorPos X="46" Y="96"/>
-        <UsageCount Value="130"/>
+        <UsageCount Value="139"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.ViolenceMatch.pas"/>
@@ -297,7 +297,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="32"/>
         <CursorPos X="22" Y="44"/>
-        <UsageCount Value="35"/>
+        <UsageCount Value="44"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.KMPAlgorithm.pas"/>
@@ -305,16 +305,16 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="39"/>
         <CursorPos X="27" Y="119"/>
-        <UsageCount Value="32"/>
+        <UsageCount Value="41"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="12"/>
-        <CursorPos X="22" Y="27"/>
-        <UsageCount Value="28"/>
+        <TopLine Value="116"/>
+        <CursorPos X="13" Y="124"/>
+        <UsageCount Value="37"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -491,147 +491,156 @@
         <Filename Value="C:\codetyphon\fpcsrc\packages\fcl-stl\src\ghashset.pp"/>
         <FRMtype Value="0"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="16"/>
+        <TopLine Value="62"/>
+        <CursorPos X="32" Y="197"/>
         <UsageCount Value="10"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\rtl-generics\src\generics.collections.pas"/>
         <FRMtype Value="0"/>
         <UnitName Value="Generics.Collections"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="1168"/>
-        <CursorPos X="20" Y="1185"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="1459"/>
+        <CursorPos X="22" Y="1433"/>
         <UsageCount Value="10"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\rtl-generics\src\inc\generics.dictionariesh.inc"/>
         <FRMtype Value="0"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="631"/>
-        <CursorPos X="3" Y="648"/>
+        <TopLine Value="125"/>
+        <CursorPos X="14" Y="136"/>
+        <UsageCount Value="12"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\codetyphon\fpcsrc\packages\rtl-generics\src\inc\generics.dictionaries.inc"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="18" Y="200"/>
         <UsageCount Value="10"/>
       </Unit>
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="15" Column="3"/>
+        <Caret Line="105" TopLine="92"/>
       </Position1>
       <Position2>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="16" Column="46"/>
+        <Caret Line="102" TopLine="92"/>
       </Position2>
       <Position3>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="17" Column="34"/>
+        <Caret Line="104" TopLine="92"/>
       </Position3>
       <Position4>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="16" Column="3"/>
+        <Caret Line="105" TopLine="92"/>
       </Position4>
       <Position5>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="17" Column="33"/>
+        <Caret Line="101" TopLine="89"/>
       </Position5>
       <Position6>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="12" Column="17" TopLine="7"/>
+        <Caret Line="98" TopLine="89"/>
       </Position6>
       <Position7>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="13" Column="29"/>
+        <Caret Line="118" Column="53" TopLine="104"/>
       </Position7>
       <Position8>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="13" Column="57"/>
+        <Caret Line="128" Column="31" TopLine="109"/>
       </Position8>
       <Position9>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="24" Column="20" TopLine="10"/>
+        <Caret Line="120" Column="30" TopLine="107"/>
       </Position9>
       <Position10>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="45" Column="32" TopLine="16"/>
+        <Caret Line="124" Column="43" TopLine="107"/>
       </Position10>
       <Position11>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="44" Column="6" TopLine="14"/>
+        <Caret Line="120" Column="37" TopLine="107"/>
       </Position11>
       <Position12>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="28" Column="3" TopLine="11"/>
+        <Caret Line="83" TopLine="80"/>
       </Position12>
       <Position13>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="13" Column="11"/>
+        <Caret Line="87" TopLine="80"/>
       </Position13>
       <Position14>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="14" Column="61"/>
+        <Caret Line="90" TopLine="80"/>
       </Position14>
       <Position15>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="55" Column="40" TopLine="26"/>
+        <Caret Line="92" TopLine="89"/>
       </Position15>
       <Position16>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="13" Column="12"/>
+        <Caret Line="95" TopLine="89"/>
       </Position16>
       <Position17>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="62" Column="8" TopLine="36"/>
+        <Caret Line="98" TopLine="89"/>
       </Position17>
       <Position18>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="61" Column="8" TopLine="43"/>
+        <Caret Line="100" TopLine="89"/>
       </Position18>
       <Position19>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="13" Column="11"/>
+        <Caret Line="101" TopLine="89"/>
       </Position19>
       <Position20>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="62" Column="17" TopLine="42"/>
+        <Caret Line="100" Column="42" TopLine="87"/>
       </Position20>
       <Position21>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="70" Column="31" TopLine="47"/>
+        <Caret Line="101" Column="44" TopLine="97"/>
       </Position21>
       <Position22>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="64" Column="51" TopLine="50"/>
+        <Caret Line="123" Column="63" TopLine="107"/>
       </Position22>
       <Position23>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="58" Column="46" TopLine="38"/>
+        <Caret Line="120" Column="52" TopLine="108"/>
       </Position23>
       <Position24>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="13" Column="3"/>
+        <Caret Line="118" Column="9" TopLine="111"/>
       </Position24>
       <Position25>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="17"/>
+        <Caret Line="120" Column="59" TopLine="108"/>
       </Position25>
       <Position26>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="13" Column="3"/>
+        <Caret Line="119" Column="8" TopLine="108"/>
       </Position26>
       <Position27>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="17"/>
+        <Caret Line="121" Column="22" TopLine="107"/>
       </Position27>
       <Position28>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="13" Column="11"/>
+        <Caret Line="120" Column="41" TopLine="108"/>
       </Position28>
       <Position29>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="20" Column="39" TopLine="16"/>
+        <Caret Line="10" Column="33"/>
       </Position29>
       <Position30>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
-        <Caret Line="75" Column="8" TopLine="7"/>
+        <Caret Line="125" Column="13" TopLine="113"/>
       </Position30>
     </JumpHistory>
     <RunParams>
@@ -642,7 +651,7 @@
   <Debugging>
     <Watches Count="1">
       <Item1>
-        <Expression Value="NEXT"/>
+        <Expression Value="tempSet"/>
       </Item1>
     </Watches>
   </Debugging>
