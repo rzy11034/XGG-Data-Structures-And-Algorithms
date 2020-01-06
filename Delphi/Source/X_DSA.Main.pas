@@ -11,7 +11,7 @@ procedure Run;
 implementation
 
 uses
-  X_DSA.GreedyAlgorithm;
+  X_DSA.PrimAlgorithm;
 
 procedure Run;
 begin

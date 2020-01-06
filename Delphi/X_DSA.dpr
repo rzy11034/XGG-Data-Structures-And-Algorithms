@@ -41,7 +41,8 @@ uses
   X_DSA.KnapsackProblem in 'Source\Algorithm\X_DSA.KnapsackProblem.pas',
   X_DSA.ViolenceMatch in 'Source\Algorithm\X_DSA.ViolenceMatch.pas',
   X_DSA.KMPAlgorithm in 'Source\Algorithm\X_DSA.KMPAlgorithm.pas',
-  X_DSA.GreedyAlgorithm in 'Source\Algorithm\X_DSA.GreedyAlgorithm.pas';
+  X_DSA.GreedyAlgorithm in 'Source\Algorithm\X_DSA.GreedyAlgorithm.pas',
+  X_DSA.PrimAlgorithm in 'Source\Algorithm\X_DSA.PrimAlgorithm.pas';
 
 begin
   try

@@ -9,6 +9,9 @@ uses
   SysUtils;
 
 type
+  UChar = UnicodeChar;
+  UString = UnicodeString;
+
   TLAUtils = class
   public
     class procedure DrawLine;

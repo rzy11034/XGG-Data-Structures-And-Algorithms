@@ -124,6 +124,7 @@
         <DCCReference Include="Source\Algorithm\X_DSA.ViolenceMatch.pas"/>
         <DCCReference Include="Source\Algorithm\X_DSA.KMPAlgorithm.pas"/>
         <DCCReference Include="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
+        <DCCReference Include="Source\Algorithm\X_DSA.PrimAlgorithm.pas"/>
         <None Include="Source\目录.txt"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>

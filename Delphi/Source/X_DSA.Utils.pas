@@ -7,6 +7,9 @@ uses
   System.Classes;
 
 type
+  UChar = Char;
+  UString = string;
+
   TLAUtils = class
   public
     class procedure DrawLine;
