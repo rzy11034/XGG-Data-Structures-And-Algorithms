@@ -20,13 +20,18 @@ type
 
   TMinTree = class
   public
-    /// <summary>创建图的邻接矩阵</summary>
-    /// <param name ="graph">图对象</param>
-    /// <param name="verxs">图对应的顶点个数</param>
-    /// <param name="data">图的各个顶点的值</param>
-    /// <param name="weight">图的邻接矩阵</param>
-    procedure CreateGraph(graph: TGraph; Verxs: integer; Data: TArr_UChar; Weight: TArr2D_int);
+    // 创建图的邻接矩阵
+    // graph: 图对象
+    // verxs: 图对应的顶点个数
+    // data: 图的各个顶点的值
+    // weight: 图的邻接矩阵
+    procedure CreateGraph(graph: TGraph; Verxs: integer; Data: TArr_UChar;
+      Weight: TArr2D_int);
     procedure ShowGraph(graph: TGraph);
+    // 编写 prim 算法，得到最小生成树
+    // graph: 图
+    // v: 表示从图的第几个顶点开始生成'A'->0 'B'->1...
+    procedure Prim(graph: TGraph; v: integer);
   end;
 
 procedure Main;
@@ -58,15 +63,7 @@ begin
 
   minTree.CreateGraph(graph, Verxs, datas, Weight);
   minTree.ShowGraph(graph);
-end;
-
-{ TGraph }
-
-constructor TGraph.Create(newVerxs: integer);
-begin
-  Verxs := newVerxs;
-  SetLength(Data, Verxs);
-  SetLength(Weight, Verxs, Verxs);
+  minTree.Prim(graph, 1);
 end;
 
 { TMinTree }
@@ -93,18 +90,71 @@ var
 begin
   for i := 0 to Length(graph.Weight) - 1 do
   begin
-    write('[');
+    Write('[');
 
     for j := 0 to Length(graph.Weight[0]) - 1 do
     begin
       if j <> Length(graph.Weight[0]) - 1 then
-        write(graph.Weight[i, j], ', ')
+        Write(graph.Weight[i, j], ', ')
       else
-        write(graph.Weight[i, j]);
+        Write(graph.Weight[i, j]);
     end;
 
     WriteLn(']');
   end;
+end;
+
+procedure TMinTree.Prim(graph: TGraph; v: integer);
+var
+  visited: array of boolean;
+  h1, h2, minWeight, k, i, j: integer;
+begin
+  SetLength(visited, graph.Verxs);
+
+  // h1 和 h2 记录两个顶点的下标
+  h1 := -1;
+  h2 := -1;
+
+  minWeight := MaxInt; // 将 minWeight 初始成一个大数，后面在遍历过程中，会被替换
+
+  // 把当前这个结点标记为已访问
+  visited[v] := True;
+
+  for k := 1 to graph.Verxs - 1 do // 因为有 graph.verxs顶点，普利姆算法结束后，有 graph.verxs-1边
+  begin
+
+    // 这个是确定每一次生成的子图 ，和哪个结点的距离最近
+    for i := 0 to graph.Verxs - 1 do // i 结点表示被访问过的结点
+    begin
+      for j := 0 to graph.Verxs - 1 do // j 结点表示还没有访问过的结点
+      begin
+        if (visited[i]) and (not visited[j]) and (graph.Weight[i, j] < minWeight)
+        then
+        begin
+          // 替换 minWeight (寻找已经访问过的结点和未访问过的结点间的权值最小的边)
+          minWeight := graph.Weight[i][j];
+          h1 := i;
+          h2 := j;
+        end;
+      end;
+    end;
+
+    // 找到一条边是最小
+    WriteLn('边<', graph.Data[h1], ',', graph.Data[h2], '> 权值:', minWeight);
+    // 将当前这个结点标记为已经访问
+    visited[h2] := True;
+    // minWeight 重新设置为最大值
+    minWeight := MaxInt;
+  end;
+end;
+
+{ TGraph }
+
+constructor TGraph.Create(newVerxs: integer);
+begin
+  Verxs := newVerxs;
+  SetLength(Data, Verxs);
+  SetLength(Weight, Verxs, Verxs);
 end;
 
 end.

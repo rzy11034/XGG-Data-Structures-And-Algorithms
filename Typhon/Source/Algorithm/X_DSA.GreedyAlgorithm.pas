@@ -7,12 +7,13 @@ interface
 uses
   Classes,
   SysUtils,
-  Generics.Collections;
+  Generics.Collections,
+  X_DSA.Utils;
 
 type
-  THashSets = specialize THashMap<UnicodeString, TObject>;
-  TBroadcasts = specialize THashMap<UnicodeString, THashSets>;
-  TListOfStr = specialize TList<UnicodeString>;
+  THashSets = specialize THashMap<UString, TObject>;
+  TBroadcasts = specialize THashMap<UString, THashSets>;
+  TListOfStr = specialize TList<UString>;
 
 
 procedure Main;
@@ -24,8 +25,8 @@ var
   set1, set2, set3, set4, set5, areas, allAreas, tempSet: THashSets;
   broadcasts: TBroadcasts;
   selects: TListOfStr;
-  maxKey, key: UnicodeString;
-  i, j: integer;
+  maxKey, key: UString;
+  i: integer;
 begin
   // -------------------------------------------------------------
   // 创建广播电台
@@ -80,7 +81,8 @@ begin
   // 在遍历的过程中，存放遍历过程中的电台覆盖的地区和当前还没有覆盖的地区的交集
   tempSet := THashSets.Create;
 
-  while allAreas.Count <> 0 do // 如果 allAreas 不为 0, 则表示还没有覆盖到所有的地区
+  while allAreas.Count <> 0 do
+    // 如果 allAreas 不为 0, 则表示还没有覆盖到所有的地区
   begin
     // 定义给 maxKey，保存在一次遍历过程中，能够覆盖最大未覆盖的地区对应的电台的key
     // 如果 maxKey 不为 nil , 则会加入到 selects
@@ -111,13 +113,12 @@ begin
     end;
 
     // maxKey <> nil, 就应该将 maxKey 加入 selects
-    // 并将maxKey指向的广播电台覆盖的地区，从 allAreas 去掉
+    // 并将 maxKey 指向的广播电台覆盖的地区，从 allAreas 去掉
     if maxKey <> '' then
     begin
       selects.Add(maxKey);
-      j := broadcasts[maxKey].Count;
 
-      for i := 0 to j - 1 do
+      for i := 0 to broadcasts[maxKey].Count - 1 do
       begin
         if allAreas.ContainsKey(broadcasts[maxKey].Keys.ToArray[i]) then
           allAreas.Remove(broadcasts[maxKey].Keys.ToArray[i]);
