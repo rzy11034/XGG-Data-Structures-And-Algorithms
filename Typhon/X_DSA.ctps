@@ -98,11 +98,10 @@
       <Unit>
         <Filename Value="Source\DataStructures\Sort\X_DSA.BubbleSort.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="10"/>
         <CursorPos X="73" Y="12"/>
         <UsageCount Value="200"/>
-        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Sort\X_DSA.SelectSort.pas"/>
@@ -242,7 +241,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="16"/>
         <CursorPos Y="33"/>
-        <UsageCount Value="181"/>
+        <UsageCount Value="188"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTree.pas"/>
@@ -250,7 +249,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="82"/>
         <CursorPos X="8" Y="99"/>
-        <UsageCount Value="180"/>
+        <UsageCount Value="187"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Graph\X_DSA.Graph.pas"/>
@@ -258,7 +257,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="130"/>
         <CursorPos X="31" Y="180"/>
-        <UsageCount Value="170"/>
+        <UsageCount Value="177"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Graph\X_DSA.GraphDemo.pas"/>
@@ -266,7 +265,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="23"/>
         <CursorPos X="27" Y="42"/>
-        <UsageCount Value="167"/>
+        <UsageCount Value="174"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.BinarySearchNoRecur.pas"/>
@@ -274,7 +273,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="22"/>
         <CursorPos X="36" Y="39"/>
-        <UsageCount Value="156"/>
+        <UsageCount Value="163"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.HanoiTower.pas"/>
@@ -282,7 +281,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="11"/>
         <CursorPos X="6" Y="39"/>
-        <UsageCount Value="154"/>
+        <UsageCount Value="161"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.KnapsackProblem.pas"/>
@@ -290,7 +289,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="57"/>
         <CursorPos X="46" Y="96"/>
-        <UsageCount Value="153"/>
+        <UsageCount Value="160"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.ViolenceMatch.pas"/>
@@ -298,7 +297,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="32"/>
         <CursorPos X="22" Y="44"/>
-        <UsageCount Value="58"/>
+        <UsageCount Value="65"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.KMPAlgorithm.pas"/>
@@ -306,7 +305,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="39"/>
         <CursorPos X="27" Y="119"/>
-        <UsageCount Value="55"/>
+        <UsageCount Value="62"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
@@ -314,7 +313,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="110"/>
         <CursorPos Y="121"/>
-        <UsageCount Value="51"/>
+        <UsageCount Value="58"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.PrimAlgorithm.pas"/>
@@ -322,16 +321,16 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="82"/>
         <CursorPos X="27" Y="96"/>
-        <UsageCount Value="34"/>
+        <UsageCount Value="41"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <EditorIndex Value="4"/>
-        <TopLine Value="66"/>
-        <CursorPos X="52" Y="67"/>
-        <UsageCount Value="26"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="63"/>
+        <CursorPos X="87" Y="85"/>
+        <UsageCount Value="33"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -339,33 +338,33 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="69"/>
         <CursorPos X="35" Y="52"/>
-        <UsageCount Value="35"/>
+        <UsageCount Value="34"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Code_Implementation\X_DSA.LinkedList.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="27"/>
         <CursorPos X="25" Y="46"/>
-        <UsageCount Value="34"/>
+        <UsageCount Value="33"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Code_Implementation\X_DSA.DoubleLinkedList.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="82"/>
         <CursorPos X="3" Y="87"/>
-        <UsageCount Value="28"/>
+        <UsageCount Value="27"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Code_Implementation\X_DSA.CircularLinkedList.pas"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="12" Y="9"/>
-        <UsageCount Value="23"/>
+        <UsageCount Value="22"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Code_Implementation\X_DSA.InversePolishCalculator.pas"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="24" Y="386"/>
-        <UsageCount Value="19"/>
+        <UsageCount Value="18"/>
       </Unit>
       <Unit>
         <Filename Value="..\..\Data-Structures-and-Algorithms\Typhon\Source\Graph\DSA.Graph.DenseGraph.pas"/>
@@ -373,7 +372,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="186"/>
         <CursorPos X="3" Y="191"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit>
       <Unit>
         <Filename Value="..\尚硅谷_图解Java数据结构和算法\代码\DataStructures\graph\Graph.java"/>
@@ -381,7 +380,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="91"/>
         <CursorPos X="29" Y="159"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
         <DefaultSyntaxHighlighter Value="Java"/>
       </Unit>
       <Unit>
@@ -390,7 +389,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="122"/>
         <CursorPos X="11" Y="139"/>
-        <UsageCount Value="1"/>
+        <UsageCount Value="0"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\rtl\win\sysutils.pp"/>
@@ -399,7 +398,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="45"/>
         <CursorPos Y="1660"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\regexpr\src\regex.pp"/>
@@ -408,7 +407,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="43"/>
         <CursorPos X="12" Y="14"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\regexpr\src\regexpr.pas"/>
@@ -417,7 +416,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="3760"/>
         <CursorPos X="34" Y="3727"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\fcl-base\src\avl_tree.pp"/>
@@ -425,7 +424,7 @@
         <UnitName Value="AVL_Tree"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="12" Y="18"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\rtl\objpas\sysutils\syshelph.inc"/>
@@ -433,7 +432,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="26"/>
         <CursorPos X="28" Y="13"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\rtl\objpas\sysutils\sysutilh.inc"/>
@@ -441,7 +440,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="314"/>
         <CursorPos X="13" Y="331"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\rtl\objpas\sysutils\sysuni.inc"/>
@@ -449,7 +448,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="527"/>
         <CursorPos X="10" Y="543"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\rtl\objpas\sysutils\sysutils.inc"/>
@@ -457,7 +456,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="154"/>
         <CursorPos X="9" Y="158"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\rtl\objpas\sysutils\syshelp.inc"/>
@@ -465,7 +464,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="135"/>
         <CursorPos X="48" Y="1406"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\rtl\inc\systemh.inc"/>
@@ -473,7 +472,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="235"/>
         <CursorPos X="20" Y="429"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\rtl\objpas\sysutils\sysunih.inc"/>
@@ -481,7 +480,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="9"/>
         <CursorPos X="3" Y="15"/>
-        <UsageCount Value="8"/>
+        <UsageCount Value="7"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\fcl-stl\src\gmap.pp"/>
@@ -489,20 +488,20 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="10"/>
         <CursorPos X="11" Y="23"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\fcl-stl\src\gset.pp"/>
         <FRMtype Value="0"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="13"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\fcl-stl\src\gutil.pp"/>
         <FRMtype Value="0"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\fcl-stl\src\ghashset.pp"/>
@@ -510,7 +509,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="62"/>
         <CursorPos X="32" Y="197"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\rtl-generics\src\generics.collections.pas"/>
@@ -519,7 +518,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="86"/>
         <CursorPos X="3" Y="70"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\rtl-generics\src\inc\generics.dictionariesh.inc"/>
@@ -527,17 +526,17 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="125"/>
         <CursorPos X="14" Y="136"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="10"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\rtl-generics\src\inc\generics.dictionaries.inc"/>
         <FRMtype Value="0"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="18" Y="200"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="9">
+    <JumpHistory HistoryIndex="19">
       <Position>
         <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
         <Caret Line="17" Column="25"/>
@@ -577,6 +576,46 @@
       <Position>
         <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
         <Caret Line="74" Column="30" TopLine="4"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
+        <Caret Line="20" Column="17" TopLine="7"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
+        <Caret Line="18" Column="24" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
+        <Caret Line="22" Column="78" TopLine="10"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
+        <Caret Line="24" Column="22" TopLine="10"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
+        <Caret Line="81" Column="16" TopLine="67"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
+        <Caret Line="79" Column="24" TopLine="73"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
+        <Caret Line="85" Column="71" TopLine="71"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
+        <Caret Line="24" Column="32" TopLine="60"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
+        <Caret Line="86" Column="26" TopLine="71"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
+        <Caret Line="83" Column="20" TopLine="72"/>
       </Position>
     </JumpHistory>
     <RunParams>

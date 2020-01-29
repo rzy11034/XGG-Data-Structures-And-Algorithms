@@ -13,7 +13,16 @@ type
   TArr_UChar = array of UChar;
   TArr2D_int = array of array of integer;
 
-  { TKruskalCase }
+  TEData = class(TObject)
+  public
+    StartPoint: UChar; // 边的一个点
+    EndPoint: UChar; // 边的另外一个点
+    Weight: integer; // 边的权值
+
+    constructor Create(newStartPoint, newEndPoint: UChar; newWeight: integer);
+    destructor Destroy; override;
+    function ToString: string; override;
+  end;
 
   TKruskalCase = class
   private
@@ -55,6 +64,25 @@ begin
 
   kc := TKruskalCase.Create(vertexs, matrix);
   kc.Print;
+end;
+
+{ TEData }
+
+constructor TEData.Create(newStartPoint, newEndPoint: UChar; newWeight: integer);
+begin
+  StartPoint := newStartPoint;
+  EndPoint := newEndPoint;
+  Weight := newWeight;
+end;
+
+destructor TEData.Destroy;
+begin
+  inherited Destroy;
+end;
+
+function TEData.ToString: string;
+begin
+  Result := 'EData [<' + StartPoint + ', ' + EndPoint + '>= ' + weight.ToString + ']';
 end;
 
 { TKruskalCase }
