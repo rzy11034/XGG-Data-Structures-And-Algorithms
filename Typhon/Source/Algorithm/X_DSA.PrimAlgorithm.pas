@@ -94,9 +94,9 @@ begin
   begin
     Write('[');
 
-    for j := 0 to Length(graph.Weight[0]) - 1 do
+    for j := 0 to Length(graph.Weight[i]) - 1 do
     begin
-      if j <> Length(graph.Weight[0]) - 1 then
+      if j <> Length(graph.Weight[i]) - 1 then
         Write(graph.Weight[i, j], ', ')
       else
         Write(graph.Weight[i, j]);

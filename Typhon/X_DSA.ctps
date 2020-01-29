@@ -18,7 +18,7 @@
         <Filename Value="Source\X_DSA.Main.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="2"/>
-        <CursorPos X="22" Y="16"/>
+        <CursorPos X="20" Y="16"/>
         <UsageCount Value="221"/>
         <Loaded Value="True"/>
       </Unit>
@@ -98,10 +98,11 @@
       <Unit>
         <Filename Value="Source\DataStructures\Sort\X_DSA.BubbleSort.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="7"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="10"/>
         <CursorPos X="73" Y="12"/>
         <UsageCount Value="200"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Sort\X_DSA.SelectSort.pas"/>
@@ -114,6 +115,7 @@
         <Filename Value="Source\DataStructures\Sort\X_DSA.InsertSort.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
+        <TopLine Value="13"/>
         <CursorPos X="12" Y="9"/>
         <UsageCount Value="200"/>
       </Unit>
@@ -240,7 +242,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="16"/>
         <CursorPos Y="33"/>
-        <UsageCount Value="179"/>
+        <UsageCount Value="181"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTree.pas"/>
@@ -248,7 +250,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="82"/>
         <CursorPos X="8" Y="99"/>
-        <UsageCount Value="178"/>
+        <UsageCount Value="180"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Graph\X_DSA.Graph.pas"/>
@@ -256,7 +258,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="130"/>
         <CursorPos X="31" Y="180"/>
-        <UsageCount Value="168"/>
+        <UsageCount Value="170"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Graph\X_DSA.GraphDemo.pas"/>
@@ -264,7 +266,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="23"/>
         <CursorPos X="27" Y="42"/>
-        <UsageCount Value="165"/>
+        <UsageCount Value="167"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.BinarySearchNoRecur.pas"/>
@@ -272,7 +274,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="22"/>
         <CursorPos X="36" Y="39"/>
-        <UsageCount Value="154"/>
+        <UsageCount Value="156"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.HanoiTower.pas"/>
@@ -280,7 +282,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="11"/>
         <CursorPos X="6" Y="39"/>
-        <UsageCount Value="152"/>
+        <UsageCount Value="154"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.KnapsackProblem.pas"/>
@@ -288,7 +290,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="57"/>
         <CursorPos X="46" Y="96"/>
-        <UsageCount Value="151"/>
+        <UsageCount Value="153"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.ViolenceMatch.pas"/>
@@ -296,7 +298,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="32"/>
         <CursorPos X="22" Y="44"/>
-        <UsageCount Value="56"/>
+        <UsageCount Value="58"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.KMPAlgorithm.pas"/>
@@ -304,7 +306,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="39"/>
         <CursorPos X="27" Y="119"/>
-        <UsageCount Value="53"/>
+        <UsageCount Value="55"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
@@ -312,16 +314,24 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="110"/>
         <CursorPos Y="121"/>
-        <UsageCount Value="49"/>
+        <UsageCount Value="51"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.PrimAlgorithm.pas"/>
         <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="82"/>
+        <CursorPos X="27" Y="96"/>
+        <UsageCount Value="34"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
+        <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="4"/>
-        <TopLine Value="84"/>
-        <CursorPos X="29" Y="104"/>
-        <UsageCount Value="32"/>
+        <TopLine Value="66"/>
+        <CursorPos X="52" Y="67"/>
+        <UsageCount Value="26"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -526,17 +536,8 @@
         <CursorPos X="18" Y="200"/>
         <UsageCount Value="9"/>
       </Unit>
-      <Unit>
-        <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
-        <IsPartOfProject Value="True"/>
-        <EditorIndex Value="3"/>
-        <TopLine Value="55"/>
-        <CursorPos X="3" Y="60"/>
-        <UsageCount Value="24"/>
-        <Loaded Value="True"/>
-      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="6">
+    <JumpHistory HistoryIndex="9">
       <Position>
         <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
         <Caret Line="17" Column="25"/>
@@ -562,8 +563,20 @@
         <Caret Line="26" Column="20" TopLine="13"/>
       </Position>
       <Position>
-        <Filename Value="Source\Algorithm\X_DSA.PrimAlgorithm.pas"/>
-        <Caret Line="28" Column="43" TopLine="44"/>
+        <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
+        <Caret Line="72" Column="8" TopLine="46"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
+        <Caret Line="74" Column="10" TopLine="55"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
+        <Caret Line="86" Column="54" TopLine="64"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
+        <Caret Line="74" Column="30" TopLine="4"/>
       </Position>
     </JumpHistory>
     <RunParams>
