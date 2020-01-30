@@ -99,7 +99,7 @@
         <Filename Value="Source\DataStructures\Sort\X_DSA.BubbleSort.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="10"/>
+        <TopLine Value="29"/>
         <CursorPos X="73" Y="12"/>
         <UsageCount Value="200"/>
       </Unit>
@@ -107,6 +107,7 @@
         <Filename Value="Source\DataStructures\Sort\X_DSA.SelectSort.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
+        <TopLine Value="24"/>
         <CursorPos X="30" Y="23"/>
         <UsageCount Value="202"/>
       </Unit>
@@ -114,7 +115,7 @@
         <Filename Value="Source\DataStructures\Sort\X_DSA.InsertSort.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="13"/>
+        <TopLine Value="22"/>
         <CursorPos X="12" Y="9"/>
         <UsageCount Value="200"/>
       </Unit>
@@ -241,7 +242,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="16"/>
         <CursorPos Y="33"/>
-        <UsageCount Value="188"/>
+        <UsageCount Value="196"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Tree\X_DSA.BinarySortTree.pas"/>
@@ -249,7 +250,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="82"/>
         <CursorPos X="8" Y="99"/>
-        <UsageCount Value="187"/>
+        <UsageCount Value="195"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Graph\X_DSA.Graph.pas"/>
@@ -257,7 +258,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="130"/>
         <CursorPos X="31" Y="180"/>
-        <UsageCount Value="177"/>
+        <UsageCount Value="185"/>
       </Unit>
       <Unit>
         <Filename Value="Source\DataStructures\Graph\X_DSA.GraphDemo.pas"/>
@@ -265,7 +266,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="23"/>
         <CursorPos X="27" Y="42"/>
-        <UsageCount Value="174"/>
+        <UsageCount Value="182"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.BinarySearchNoRecur.pas"/>
@@ -273,7 +274,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="22"/>
         <CursorPos X="36" Y="39"/>
-        <UsageCount Value="163"/>
+        <UsageCount Value="171"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.HanoiTower.pas"/>
@@ -281,7 +282,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="11"/>
         <CursorPos X="6" Y="39"/>
-        <UsageCount Value="161"/>
+        <UsageCount Value="169"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.KnapsackProblem.pas"/>
@@ -289,7 +290,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="57"/>
         <CursorPos X="46" Y="96"/>
-        <UsageCount Value="160"/>
+        <UsageCount Value="168"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.ViolenceMatch.pas"/>
@@ -297,7 +298,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="32"/>
         <CursorPos X="22" Y="44"/>
-        <UsageCount Value="65"/>
+        <UsageCount Value="73"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.KMPAlgorithm.pas"/>
@@ -305,7 +306,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="39"/>
         <CursorPos X="27" Y="119"/>
-        <UsageCount Value="62"/>
+        <UsageCount Value="70"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.GreedyAlgorithm.pas"/>
@@ -313,24 +314,24 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="110"/>
         <CursorPos Y="121"/>
-        <UsageCount Value="58"/>
+        <UsageCount Value="66"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.PrimAlgorithm.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="82"/>
+        <TopLine Value="135"/>
         <CursorPos X="27" Y="96"/>
-        <UsageCount Value="41"/>
+        <UsageCount Value="49"/>
       </Unit>
       <Unit>
         <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="63"/>
-        <CursorPos X="87" Y="85"/>
-        <UsageCount Value="33"/>
+        <TopLine Value="161"/>
+        <CursorPos X="23" Y="169"/>
+        <UsageCount Value="41"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -389,7 +390,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="122"/>
         <CursorPos X="11" Y="139"/>
-        <UsageCount Value="0"/>
+        <UsageCount Value="10"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\rtl\win\sysutils.pp"/>
@@ -535,87 +536,142 @@
         <CursorPos X="18" Y="200"/>
         <UsageCount Value="8"/>
       </Unit>
+      <Unit>
+        <Filename Value="..\..\Data-Structures-and-Algorithms\CodeTyphon\Source\Graph\DSA.Graph.SparseGraph.pas"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="27" Y="141"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\Data-Structures-and-Algorithms\CodeTyphon\Source\Graph\DSA.Graph.DenseWeightedGraph.pas"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="99"/>
+        <CursorPos X="34" Y="111"/>
+        <UsageCount Value="10"/>
+      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="19">
+    <JumpHistory HistoryIndex="29">
       <Position>
         <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
-        <Caret Line="17" Column="25"/>
+        <Caret Line="115" TopLine="102"/>
       </Position>
       <Position>
         <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
-        <Caret Line="21" Column="38" TopLine="4"/>
+        <Caret Line="116" TopLine="102"/>
       </Position>
       <Position>
         <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
-        <Caret Line="49" Column="46" TopLine="26"/>
+        <Caret Line="113" TopLine="102"/>
       </Position>
       <Position>
         <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
-        <Caret Line="41" Column="8" TopLine="26"/>
+        <Caret Line="111" TopLine="102"/>
       </Position>
       <Position>
         <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
-        <Caret Line="28" Column="21" TopLine="14"/>
+        <Caret Line="113" TopLine="102"/>
       </Position>
       <Position>
         <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
-        <Caret Line="26" Column="20" TopLine="13"/>
+        <Caret Line="115" TopLine="102"/>
       </Position>
       <Position>
         <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
-        <Caret Line="72" Column="8" TopLine="46"/>
+        <Caret Line="116" TopLine="102"/>
       </Position>
       <Position>
         <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
-        <Caret Line="74" Column="10" TopLine="55"/>
+        <Caret Line="113" TopLine="102"/>
       </Position>
       <Position>
         <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
-        <Caret Line="86" Column="54" TopLine="64"/>
+        <Caret Line="115" TopLine="102"/>
       </Position>
       <Position>
         <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
-        <Caret Line="74" Column="30" TopLine="4"/>
+        <Caret Line="116" TopLine="102"/>
       </Position>
       <Position>
         <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
-        <Caret Line="20" Column="17" TopLine="7"/>
+        <Caret Line="75" Column="38" TopLine="165"/>
       </Position>
       <Position>
         <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
-        <Caret Line="18" Column="24" TopLine="6"/>
+        <Caret Line="87" Column="35" TopLine="71"/>
       </Position>
       <Position>
         <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
-        <Caret Line="22" Column="78" TopLine="10"/>
+        <Caret Line="85" TopLine="77"/>
       </Position>
       <Position>
         <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
-        <Caret Line="24" Column="22" TopLine="10"/>
+        <Caret Line="87" TopLine="77"/>
       </Position>
       <Position>
         <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
-        <Caret Line="81" Column="16" TopLine="67"/>
+        <Caret Line="88" TopLine="77"/>
       </Position>
       <Position>
         <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
-        <Caret Line="79" Column="24" TopLine="73"/>
+        <Caret Line="87" TopLine="77"/>
       </Position>
       <Position>
         <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
-        <Caret Line="85" Column="71" TopLine="71"/>
+        <Caret Line="88" Column="22" TopLine="77"/>
       </Position>
       <Position>
         <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
-        <Caret Line="24" Column="32" TopLine="60"/>
+        <Caret Line="85" TopLine="77"/>
       </Position>
       <Position>
         <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
-        <Caret Line="86" Column="26" TopLine="71"/>
+        <Caret Line="87" TopLine="77"/>
       </Position>
       <Position>
         <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
-        <Caret Line="83" Column="20" TopLine="72"/>
+        <Caret Line="88" TopLine="77"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
+        <Caret Line="87" TopLine="77"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
+        <Caret Line="88" TopLine="77"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
+        <Caret Line="87" TopLine="77"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
+        <Caret Line="88" TopLine="77"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
+        <Caret Line="87" TopLine="77"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
+        <Caret Line="88" TopLine="77"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
+        <Caret Line="87" TopLine="77"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
+        <Caret Line="49" Column="65" TopLine="33"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
+        <Caret Line="48" Column="23" TopLine="36"/>
+      </Position>
+      <Position>
+        <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
+        <Caret Line="49" Column="37" TopLine="36"/>
       </Position>
     </JumpHistory>
     <RunParams>
@@ -626,7 +682,7 @@
   <Debugging>
     <Watches>
       <Item>
-        <Expression Value="tempSet"/>
+        <Expression Value="__edgeNum"/>
       </Item>
     </Watches>
   </Debugging>
