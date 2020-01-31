@@ -11,7 +11,7 @@ procedure Run;
 implementation
 
 uses
-  X_DSA.PrimAlgorithm;
+  X_DSA.KruskalCase;
 
 procedure Run;
 begin

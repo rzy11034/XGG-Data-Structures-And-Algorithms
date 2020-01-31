@@ -3,6 +3,7 @@
 {$APPTYPE CONSOLE}
 {$R *.res}
 
+
 uses
   System.SysUtils,
   X_DSA.Main in 'Source\X_DSA.Main.pas',
@@ -42,7 +43,8 @@ uses
   X_DSA.ViolenceMatch in 'Source\Algorithm\X_DSA.ViolenceMatch.pas',
   X_DSA.KMPAlgorithm in 'Source\Algorithm\X_DSA.KMPAlgorithm.pas',
   X_DSA.GreedyAlgorithm in 'Source\Algorithm\X_DSA.GreedyAlgorithm.pas',
-  X_DSA.PrimAlgorithm in 'Source\Algorithm\X_DSA.PrimAlgorithm.pas';
+  X_DSA.PrimAlgorithm in 'Source\Algorithm\X_DSA.PrimAlgorithm.pas',
+  X_DSA.KruskalCase in 'Source\Algorithm\X_DSA.KruskalCase.pas';
 
 begin
   try

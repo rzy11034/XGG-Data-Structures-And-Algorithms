@@ -13,7 +13,7 @@ procedure Run;
 implementation
 
 uses
-  X_DSA.KruskalCase;
+  X_DSA.DijkstraAlgorithm;
 
 procedure Run;
 begin

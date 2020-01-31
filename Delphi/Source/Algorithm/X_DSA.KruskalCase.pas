@@ -1,17 +1,14 @@
 ﻿unit X_DSA.KruskalCase;
 
-{$mode objfpc}{$H+}
-
 interface
 
 uses
-  Classes,
-  SysUtils,
+  System.SysUtils,
   X_DSA.Utils;
 
 type
-  TArr_UChar = array of UChar;
-  TArr2D_int = array of array of integer;
+  TArr_UChar = TArray<UChar>;
+  TArr2D_int = TArray<TArray<integer>>;
 
   TEData = class(TObject)
   public
@@ -24,21 +21,21 @@ type
     function ToString: string; override;
   end;
 
-  TArr_TEData = array of TEData;
-  TArr_int = array of integer;
+  TArr_TEData = TArray<TEData>;
+  TArr_int = TArray<integer>;
 
   TKruskalCase = class
   private
-    __edgeNum: integer; //边的个数
-    __vertexs: TArr_UChar; //顶点数组
-    __matrix: TArr2D_int; //邻接矩阵
+    __edgeNum: integer; // 边的个数
+    __vertexs: TArr_UChar; // 顶点数组
+    __matrix: TArr2D_int; // 邻接矩阵
 
     // 对边进行排序处理, 冒泡排序
     // edges: 边的集合
     procedure __sortEdges(edges: TArr_TEData);
     // 返回ch顶点对应的下标，如果找不到，返回-1
     function __getPosition(chr: UChar): integer;
-    //获取图中边，放到EData[] 数组中，后面我们需要遍历该数组
+    // 获取图中边，放到EData[] 数组中，后面我们需要遍历该数组
     // 是通过matrix 邻接矩阵来获取
     // EData[] 形式 [['A','B', 12], ['B','F',7], .....]
     function __getEdges: TArr_TEData;
@@ -71,7 +68,7 @@ var
 begin
   vertexs := ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
 
-  //克鲁斯卡尔算法的邻接矩阵
+  // 克鲁斯卡尔算法的邻接矩阵
   matrix := [
     [000, 012, INF, INF, INF, 016, 014],
     [012, 000, 010, INF, INF, 007, INF],
@@ -102,7 +99,7 @@ end;
 
 function TEData.ToString: string;
 begin
-  Result := 'EData [<' + StartPoint + ', ' + EndPoint + '>= ' + weight.ToString + ']';
+  Result := 'EData [<' + StartPoint + ', ' + EndPoint + '>= ' + Weight.ToString + ']';
 end;
 
 { TKruskalCase }
@@ -119,7 +116,7 @@ begin
     for j := i + 1 to High(__matrix[i]) do
     begin
       if __matrix[i, j] <> INF then
-        __edgeNum += 1;
+        Inc(__edgeNum);
     end;
   end;
 end;
@@ -131,11 +128,12 @@ end;
 
 procedure TKruskalCase.Kruskal;
 var
-  ends: TArr_int = nil; // 用于保存"已有最小生成树" 中的每个顶点在最小生成树中的终点
-  rets: TArr_TEData = nil;
+  ends: TArr_int; // 用于保存"已有最小生成树" 中的每个顶点在最小生成树中的终点
+  rets: TArr_TEData;
   edges: TArr_TEData; // 创建结果数组, 保存最后的最小生成树
   i, p1, p2, m, n: integer;
 begin
+  rets := nil;
   SetLength(ends, __edgeNum);
 
   // 获取图中 所有的边的集合 ， 一共有12边
@@ -163,18 +161,18 @@ begin
     n := __getEnd(ends, p2);
 
     // 是否构成回路
-    if m <> n then //没有构成回路
+    if m <> n then // 没有构成回路
     begin
       ends[m] := n; // 设置m 在"已有最小生成树"中的终点
       SetLength(rets, Length(rets) + 1);
-      rets[High(rets)] := edges[i]; //有
+      rets[High(rets)] := edges[i]; // 有
     end;
   end;
 
   Write('最小生成树为');
   for i := 0 to High(rets) do
     Write(rets[i].ToString);
-  WriteLn;
+  writeln;
 end;
 
 procedure TKruskalCase.Print;
@@ -193,15 +191,17 @@ begin
         Write(Format('%12d', [__matrix[i, j]]));
     end;
 
-    WriteLn(']');
+    writeln(']');
   end;
 end;
 
 function TKruskalCase.__getEdges: TArr_TEData;
 var
   i, j: integer;
-  ret: TArr_TEData = nil;
+  ret: TArr_TEData;
 begin
+  ret := nil;
+
   for i := 0 to High(__matrix) do
   begin
     for j := i + 1 to High(__matrix[i]) do

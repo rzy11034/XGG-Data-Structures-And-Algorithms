@@ -251,6 +251,10 @@
         <Filename Value="Source\Algorithm\X_DSA.KruskalCase.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="Source\Algorithm\X_DSA.DijkstraAlgorithm.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
