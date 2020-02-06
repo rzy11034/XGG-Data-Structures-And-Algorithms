@@ -44,7 +44,9 @@ uses
   X_DSA.KMPAlgorithm in 'Source\Algorithm\X_DSA.KMPAlgorithm.pas',
   X_DSA.GreedyAlgorithm in 'Source\Algorithm\X_DSA.GreedyAlgorithm.pas',
   X_DSA.PrimAlgorithm in 'Source\Algorithm\X_DSA.PrimAlgorithm.pas',
-  X_DSA.KruskalCase in 'Source\Algorithm\X_DSA.KruskalCase.pas';
+  X_DSA.KruskalCase in 'Source\Algorithm\X_DSA.KruskalCase.pas',
+  X_DSA.DijkstraAlgorithm in 'Source\Algorithm\X_DSA.DijkstraAlgorithm.pas',
+  X_DSA.FloydAlgorithm in 'Source\Algorithm\X_DSA.FloydAlgorithm.pas';
 
 begin
   try

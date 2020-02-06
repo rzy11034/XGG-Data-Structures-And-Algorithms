@@ -1,18 +1,15 @@
 ﻿unit X_DSA.DijkstraAlgorithm;
 
-{$mode objfpc}{$H+}
-
 interface
 
 uses
-  Classes,
-  SysUtils,
+  System.SysUtils,
   X_DSA.Utils;
 
 type
-  TArr_int = array of integer;
-  TArr_UChar = array of UChar;
-  TArr2D_int = array of array of integer;
+  TArr_Int = TArray<integer>;
+  TArr_UChar = TArray<UChar>;
+  TArr2D_int = TArray<TArray<integer>>;
 
   TVisitedVertex = class
   private
@@ -79,7 +76,7 @@ var
   graph: TGraph;
 begin
   vertex := ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
-  //邻接矩阵
+  // 邻接矩阵
   matrix := [
     [N, 5, 7, N, N, N, 2],
     [5, N, N, 9, N, N, 3],
@@ -91,7 +88,7 @@ begin
 
   graph := TGraph.Create(vertex, matrix);
   graph.ShowGraph;
-  graph.Dijkstra(6);
+  graph.Dijkstra(2);
   graph.ShowDijkstra;
 end;
 
@@ -105,7 +102,7 @@ begin
   SetLength(Self.__pre_visited, len);
   SetLength(Self.__dis, len);
 
-  //初始化 __dis 数组
+  // 初始化 __dis 数组
   for i := 0 to High(__dis) do
     __dis[i] := N;
 
@@ -140,12 +137,12 @@ begin
     Write(i.ToString + ' ');
   WriteLn;
 
-  //输出 __pre_visited
+  // 输出 __pre_visited
   for i in __pre_visited do
     Write(i.ToString + ' ');
   WriteLn;
 
-  //输出dis
+  // 输出dis
   for i in __dis do
     Write(i.ToString + ' ');
   WriteLn;
@@ -154,7 +151,7 @@ begin
   vertex := ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
   Count := 0;
 
-  for  i in __dis do
+  for i in __dis do
   begin
     if i <> N then
     begin
@@ -165,7 +162,7 @@ begin
       WriteLn('N ');
     end;
 
-    Count += 1;
+    Inc(Count);
   end;
 
   WriteLn;
@@ -173,10 +170,11 @@ end;
 
 function TVisitedVertex.UpdateArr: integer;
 var
-  index: integer = 0;
+  index: integer;
   i: integer;
   min: integer;
 begin
+  index := 0;
   min := N;
 
   for i := 0 to High(__already_arr) do
@@ -225,7 +223,7 @@ begin
 
   for i := 0 to High(__vertex) do
   begin
-    index := __vv.UpdateArr;   // 选择并返回新的访问顶点
+    index := __vv.UpdateArr; // 选择并返回新的访问顶点
     Update(index); // 更新 index 顶点到周围顶点的距离和前驱顶点
   end;
 end;

@@ -11,7 +11,7 @@ procedure Run;
 implementation
 
 uses
-  X_DSA.KruskalCase;
+  X_DSA.FloydAlgorithm;
 
 procedure Run;
 begin

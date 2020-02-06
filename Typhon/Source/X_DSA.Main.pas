@@ -13,7 +13,7 @@ procedure Run;
 implementation
 
 uses
-  X_DSA.DijkstraAlgorithm;
+  X_DSA.FloydAlgorithm;
 
 procedure Run;
 begin
