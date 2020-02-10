@@ -128,6 +128,7 @@
         <DCCReference Include="Source\Algorithm\X_DSA.KruskalCase.pas"/>
         <DCCReference Include="Source\Algorithm\X_DSA.DijkstraAlgorithm.pas"/>
         <DCCReference Include="Source\Algorithm\X_DSA.FloydAlgorithm.pas"/>
+        <DCCReference Include="Source\Algorithm\X_DSA.HorseChessboard.pas"/>
         <None Include="Source\目录.txt"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>

@@ -11,7 +11,7 @@ procedure Run;
 implementation
 
 uses
-  X_DSA.FloydAlgorithm;
+  X_DSA.HorseChessboard;
 
 procedure Run;
 begin

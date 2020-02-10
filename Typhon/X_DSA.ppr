@@ -46,7 +46,7 @@ uses
   X_DSA.BinarySortTree,
   X_DSA.Graph,
   X_DSA.GraphDemo, X_DSA.KruskalCase, X_DSA.DijkstraAlgorithm,
-X_DSA.FloydAlgorithm;
+X_DSA.FloydAlgorithm, X_DSA.HorseChessboard;
 
 begin
   try

@@ -259,6 +259,10 @@
         <Filename Value="Source\Algorithm\X_DSA.FloydAlgorithm.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="Source\Algorithm\X_DSA.HorseChessboard.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
